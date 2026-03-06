@@ -1,479 +1,479 @@
 <div align="center">
 
-# 🏸 羽毛球极速计分板
+# 🏸 Badminton Rapid Scoreboard
 
-**Badminton Rapid Scoreboard**
+**羽毛球极速计分板**
 
-<img src="https://img.shields.io/badge/版本-2.0-6839E8?style=for-the-badge&logo=semver&logoColor=white" alt="Version">
-<img src="https://img.shields.io/badge/许可证-MIT-27F05C?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License">
-<img src="https://img.shields.io/badge/作者-试界TryWorld-0133A4?style=for-the-badge&logo=github&logoColor=white" alt="Author">
-<img src="https://img.shields.io/badge/语言-中文-FF4B4B?style=for-the-badge" alt="Language">
-<img src="https://img.shields.io/badge/平台-全平台支持-00D9FF?style=for-the-badge" alt="Platform">
+<img src="https://img.shields.io/badge/Version-2.0-6839E8?style=for-the-badge&logo=semver&logoColor=white" alt="Version">
+<img src="https://img.shields.io/badge/License-MIT-27F05C?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License">
+<img src="https://img.shields.io/badge/Author-TryWorld-0133A4?style=for-the-badge&logo=github&logoColor=white" alt="Author">
+<img src="https://img.shields.io/badge/Language-English-FF4B4B?style=for-the-badge" alt="Language">
+<img src="https://img.shields.io/badge/Platform-All_Platforms-00D9FF?style=for-the-badge" alt="Platform">
 
-### 专业 · 简洁 · 极速 · 免费
+### Professional · Simple · Fast · Free
 
-一款专为羽毛球爱好者设计的**开源免费**计分工具
+A **free, open-source** scoring tool designed for badminton enthusiasts
 
-无需安装 · 无需注册 · 打开即用 · 数据本地存储
+No Installation · No Registration · Ready to Use · Local Data Storage
 
-[🌐 在线演示](#-在线演示) · [✨ 功能特性](#-功能特性) · [🚀 快速开始](#-快速开始) · [📖 使用文档](#-使用指南) · [🤝 参与贡献](#-贡献指南)
+[🌐 Live Demo](#-live-demo) · [✨ Features](#-features) · [🚀 Quick Start](#-quick-start) · [📖 Documentation](#-user-guide) · [🤝 Contributing](#-contributing)
 
 </div>
 
 ---
 
-## 📑 目录
+## 📑 Table of Contents
 
-- [📸 项目截图](#-项目截图)
-- [📖 项目简介](#-项目简介)
-- [✨ 功能特性](#-功能特性)
-- [🌐 在线演示](#-在线演示)
-- [🚀 快速开始](#-快速开始)
-- [🎮 使用指南](#-使用指南)
-- [🛠️ 技术栈](#️-技术栈)
-- [📊 项目结构](#-项目结构)
-- [🏅 成就系统](#-成就系统)
-- [🎨 主题预览](#-主题预览)
-- [📱 移动端适配](#-移动端适配)
-- [🔐 数据安全](#-数据安全)
-- [❓ 常见问题](#-常见问题)
-- [🗺️ 未来规划](#️-未来规划)
-- [📝 更新日志](#-更新日志)
-- [🤝 贡献指南](#-贡献指南)
-- [📄 许可证](#-许可证)
-- [👨‍💻 作者](#️-作者)
+- [📸 Screenshots](#-screenshots)
+- [📖 Introduction](#-introduction)
+- [✨ Features](#-features)
+- [🌐 Live Demo](#-live-demo)
+- [🚀 Quick Start](#-quick-start)
+- [🎮 User Guide](#-user-guide)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📊 Project Structure](#-project-structure)
+- [🏅 Achievement System](#-achievement-system)
+- [🎨 Themes](#-themes)
+- [📱 Mobile Support](#-mobile-support)
+- [🔐 Data Security](#-data-security)
+- [❓ FAQ](#-faq)
+- [🗺️ Roadmap](#️-roadmap)
+- [📝 Changelog](#-changelog)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [👨‍💻 Author](#️-author)
 - [⭐ Star History](#-star-history)
 
 ---
 
-## 📸 项目截图
+## 📸 Screenshots
 
 <div align="center">
 
-### 🏸 计分板主界面
+### 🏸 Main Scoreboard Interface
 
-| 比赛进行中 | 比赛结束 | 胜利动画 |
+| In Progress | Match Ended | Victory Animation |
 |:---:|:---:|:---:|
-| ![比赛进行中](https://via.placeholder.com/300x500/6839E8/FFFFFF?text=比赛进行中) | ![比赛结束](https://via.placeholder.com/300x500/27F05C/FFFFFF?text=比赛结束) | ![胜利动画](https://via.placeholder.com/300x500/FFD700/000000?text=胜利动画) |
+| ![In Progress](https://via.placeholder.com/300x500/6839E8/FFFFFF?text=In+Progress) | ![Match Ended](https://via.placeholder.com/300x500/27F05C/FFFFFF?text=Match+Ended) | ![Victory](https://via.placeholder.com/300x500/FFD700/000000?text=Victory) |
 
-### 👥 智能分组
+### 👥 Smart Grouping
 
-| 输入选手 | 分组结果 | 开始比赛 |
+| Enter Players | Grouping Results | Start Match |
 |:---:|:---:|:---:|
-| ![输入选手](https://via.placeholder.com/300x500/0133A4/FFFFFF?text=输入选手) | ![分组结果](https://via.placeholder.com/300x500/FF6B6B/FFFFFF?text=分组结果) | ![开始比赛](https://via.placeholder.com/300x500/4ECDC4/FFFFFF?text=开始比赛) |
+| ![Enter Players](https://via.placeholder.com/300x500/0133A4/FFFFFF?text=Enter+Players) | ![Grouping Results](https://via.placeholder.com/300x500/FF6B6B/FFFFFF?text=Grouping+Results) | ![Start Match](https://via.placeholder.com/300x500/4ECDC4/FFFFFF?text=Start+Match) |
 
-### 📊 数据统计
+### 📊 Statistics
 
-| 历史记录 | 排行榜 | 能力分析 |
+| History | Leaderboard | Skill Analysis |
 |:---:|:---:|:---:|
-| ![历史记录](https://via.placeholder.com/300x500/9B59B6/FFFFFF?text=历史记录) | ![排行榜](https://via.placeholder.com/300x500/E74C3C/FFFFFF?text=排行榜) | ![能力分析](https://via.placeholder.com/300x500/3498DB/FFFFFF?text=能力分析) |
+| ![History](https://via.placeholder.com/300x500/9B59B6/FFFFFF?text=History) | ![Leaderboard](https://via.placeholder.com/300x500/E74C3C/FFFFFF?text=Leaderboard) | ![Skill Analysis](https://via.placeholder.com/300x500/3498DB/FFFFFF?text=Skill+Analysis) |
 
-### 🎨 主题切换
+### 🎨 Theme Switching
 
-| 暗夜紫 | 活力橙 | 天空蓝 |
+| Night Purple | Vibrant Orange | Sky Blue |
 |:---:|:---:|:---:|
-| ![暗夜紫](https://via.placeholder.com/300x500/6839E8/FFFFFF?text=暗夜紫) | ![活力橙](https://via.placeholder.com/300x500/FF6B35/FFFFFF?text=活力橙) | ![天空蓝](https://via.placeholder.com/300x500/00D9FF/FFFFFF?text=天空蓝) |
+| ![Night Purple](https://via.placeholder.com/300x500/6839E8/FFFFFF?text=Night+Purple) | ![Vibrant Orange](https://via.placeholder.com/300x500/FF6B35/FFFFFF?text=Vibrant+Orange) | ![Sky Blue](https://via.placeholder.com/300x500/00D9FF/FFFFFF?text=Sky+Blue) |
 
-| 森林绿 | 樱花粉 | 黑金商务 |
+| Forest Green | Sakura Pink | Black Gold |
 |:---:|:---:|:---:|
-| ![森林绿](https://via.placeholder.com/300x500/2ECC71/FFFFFF?text=森林绿) | ![樱花粉](https://via.placeholder.com/300x500/FFB6C1/FFFFFF?text=樱花粉) | ![黑金商务](https://via.placeholder.com/300x500/1A1A2E/FFD700?text=黑金商务) |
+| ![Forest Green](https://via.placeholder.com/300x500/2ECC71/FFFFFF?text=Forest+Green) | ![Sakura Pink](https://via.placeholder.com/300x500/FFB6C1/FFFFFF?text=Sakura+Pink) | ![Black Gold](https://via.placeholder.com/300x500/1A1A2E/FFD700?text=Black+Gold) |
 
 </div>
 
 ---
 
-## 📖 项目简介
+## 📖 Introduction
 
-### 🎯 这是什么？
+### 🎯 What is this?
 
-**羽毛球极速计分板** 是一款专为羽毛球运动爱好者打造的**免费、开源**计分工具。无论你是：
+**Badminton Rapid Scoreboard** is a **free, open-source** scoring tool designed for badminton enthusiasts. Whether you are:
 
-- 🏃 日常锻炼的羽毛球爱好者
-- 🏟️ 俱乐部活动的组织者
-- 🏆 业余比赛的裁判员
-- 👨‍👩‍👧‍👦 家庭聚会的小组长
+- 🏃 A casual badminton player
+- 🏟️ A club activity organizer
+- 🏆 An amateur tournament referee
+- 👨‍👩‍👧‍👦 A family gathering coordinator
 
-都能获得流畅、专业、愉悦的计分体验！
+You can enjoy a smooth, professional, and pleasant scoring experience!
 
-### 💡 为什么选择我们？
+### 💡 Why Choose Us?
 
-| 特点 | 说明 |
+| Feature | Description |
 |:---:|------|
-| 🚀 **极速上手** | 无需学习，打开即用，3秒开始计分 |
-| 💾 **数据安全** | 所有数据存储在本地，隐私有保障 |
-| 📱 **全端适配** | 手机、平板、电脑，完美支持 |
-| 🎨 **视觉享受** | 精美UI设计，6套主题随心切换 |
-| 🆓 **完全免费** | 开源项目，永久免费，无广告 |
-| 🔒 **无需注册** | 无需账号，无需登录，保护隐私 |
+| 🚀 **Instant Start** | No learning required, ready to use, start scoring in 3 seconds |
+| 💾 **Data Security** | All data stored locally, privacy guaranteed |
+| 📱 **Cross-Platform** | Perfect support for phones, tablets, and computers |
+| 🎨 **Visual Delight** | Beautiful UI design, 6 themes to choose from |
+| 🆓 **Completely Free** | Open source project, forever free, no ads |
+| 🔒 **No Registration** | No account needed, no login required, privacy protected |
 
-### 🎯 设计理念
+### 🎯 Design Philosophy
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                                                                         │
-│   ⚡ 极速操作        一键加分，无需复杂操作，专注比赛本身              │
+│   ⚡ Fast Operation     One-click scoring, focus on the game itself    │
 │                                                                         │
-│   📊 数据驱动        自动记录历史，生成统计分析，见证成长轨迹          │
+│   📊 Data Driven        Auto-record history, generate statistics       │
 │                                                                         │
-│   🎨 视觉愉悦        精美UI设计，胜利动画庆祝，增添运动乐趣            │
+│   🎨 Visual Delight     Beautiful UI, victory celebration animations   │
 │                                                                         │
-│   📱 移动优先        完美适配手机和平板，随时随地记录比赛              │
+│   📱 Mobile First       Perfect adaptation for phones and tablets      │
 │                                                                         │
-│   🔐 隐私至上        数据本地存储，不上传云端，保护个人隐私            │
+│   🔐 Privacy First      Local storage, no cloud uploads                │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## ✨ 功能特性
+## ✨ Features
 
-### 🏆 核心功能一览
+### 🏆 Core Features Overview
 
 <table>
 <tr>
 <td width="50%">
 
-#### 🏸 快速计分
-- 一键加分，支持键盘快捷键
-- 撤销/重做操作，防止误触
-- 自动判定胜负，支持三局两胜
-- 实时计时，记录比赛时长
-- 支持加分赛（30分封顶）
+#### 🏸 Quick Scoring
+- One-click scoring with keyboard shortcuts
+- Undo/Redo operations to prevent mistakes
+- Auto-determine winner, best of 3 sets
+- Real-time timing, record match duration
+- Support for deuce games (30-point cap)
 
 </td>
 <td width="50%">
 
-#### 👥 智能分组
-- 自动生成公平对战组合
-- 支持单打/双打模式
-- 随机打乱，避免固定搭档
-- 一键重新分组
-- 保存分组结果
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 💰 费用分摊
-- AA制平均分摊
-- 按人头均摊
-- 自定义比例分摊
-- 支持额外费用项
-- 一键生成账单
-
-</td>
-<td width="50%">
-
-#### 📜 历史记录
-- 自动保存所有比赛
-- 按日期/选手筛选
-- 查看比赛详情
-- 导出数据备份
-- 数据恢复功能
+#### 👥 Smart Grouping
+- Auto-generate fair match combinations
+- Support singles/doubles modes
+- Random shuffle, avoid fixed partners
+- One-click re-grouping
+- Save grouping results
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🏅 排行榜
-- 胜场数排名
-- 胜率排名
-- 参赛数排名
-- 累计时长排名
-- 综合能力评分
+#### 💰 Cost Splitting
+- AA-style equal splitting
+- Per-person splitting
+- Custom ratio splitting
+- Support extra cost items
+- One-click bill generation
 
 </td>
 <td width="50%">
 
-#### 📈 能力分析
-- 基于真实数据计算
-- 生成选手能力雷达图
-- 自动生成成就标签
-- 历史趋势分析
-- 对手胜率统计
+#### 📜 History Records
+- Auto-save all matches
+- Filter by date/player
+- View match details
+- Export data backup
+- Data recovery function
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🏆 成就系统
-- 12个成就等你解锁
-- 增加运动乐趣
-- 记录里程碑时刻
-- 分享成就卡片
-- 激励持续运动
+#### 🏅 Leaderboard
+- Wins ranking
+- Win rate ranking
+- Participation count ranking
+- Total duration ranking
+- Comprehensive skill rating
 
 </td>
 <td width="50%">
 
-#### 🎨 个性主题
-- 6套精美主题
-- 一键切换无刷新
-- 支持自定义颜色
-- 主题跟随系统
-- 护眼暗色模式
+#### 📈 Skill Analysis
+- Based on real data calculation
+- Generate skill radar charts
+- Auto-generate achievement tags
+- Historical trend analysis
+- Opponent win rate statistics
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🏆 Achievement System
+- 12 achievements to unlock
+- Add fun to sports
+- Record milestone moments
+- Share achievement cards
+- Motivate continuous play
+
+</td>
+<td width="50%">
+
+#### 🎨 Custom Themes
+- 6 beautiful themes
+- One-click switch without refresh
+- Support custom colors
+- Theme follows system
+- Eye-friendly dark mode
 
 </td>
 </tr>
 </table>
 
-### 🎯 详细功能说明
+### 🎯 Detailed Feature Description
 
-#### 🏸 计分系统
+#### 🏸 Scoring System
 
 ```
-计分规则说明：
+Scoring Rules:
 ┌─────────────────────────────────────────────────────────────┐
-│  标准规则                                                   │
-│  ├── 每局21分，先得21分者胜                                │
-│  ├── 20平后，需领先2分才能获胜                             │
-│  ├── 29平后，先得30分者胜                                  │
-│  └── 三局两胜制                                            │
+│  Standard Rules                                             │
+│  ├── 21 points per game, first to 21 wins                  │
+│  ├── At 20-20, must lead by 2 points to win                │
+│  ├── At 29-29, first to 30 wins                            │
+│  └── Best of 3 games                                        │
 │                                                             │
-│  特殊规则                                                   │
-│  ├── 可自定义目标分数（15/21/30）                          │
-│  ├── 可设置平分后需领先分数                                │
-│  └── 可设置最大封顶分数                                    │
+│  Special Rules                                              │
+│  ├── Customizable target score (15/21/30)                  │
+│  ├── Set lead points required after deuce                  │
+│  └── Set maximum score cap                                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-#### 👥 分组算法
+#### 👥 Grouping Algorithm
 
 ```
-智能分组算法：
+Smart Grouping Algorithm:
 ┌─────────────────────────────────────────────────────────────┐
-│  输入：N位选手名单                                          │
-│  输出：公平的对战组合                                       │
+│  Input: List of N players                                   │
+│  Output: Fair match combinations                            │
 │                                                             │
-│  算法特点：                                                 │
-│  1. 随机打乱选手顺序                                        │
-│  2. 双打时自动配对                                          │
-│  3. 确保每人出场次数均衡                                    │
-│  4. 避免重复对阵组合                                        │
-│  5. 支持奇数人数处理                                        │
+│  Algorithm Features:                                        │
+│  1. Random shuffle player order                            │
+│  2. Auto-pairing for doubles                               │
+│  3. Ensure balanced appearances for all                    │
+│  4. Avoid repeated match combinations                      │
+│  5. Support odd number of players                          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🌐 在线演示
+## 🌐 Live Demo
 
 <div align="center">
 
-### 🎮 立即体验
+### 🎮 Try It Now
 
-| 平台 | 链接 | 说明 |
+| Platform | Link | Description |
 |:---:|:---:|:---:|
-| GitHub Pages | [点击访问](https://1822520752.github.io/badmintonrapidscoreboard/) | 推荐使用 |
-| 本地运行 | 见下方说明 | 完整功能 |
+| GitHub Pages | [Click to Visit](https://1822520752.github.io/badmintonrapidscoreboard/) | Recommended |
+| Local Run | See instructions below | Full features |
 
 </div>
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 方式一：在线使用（推荐）
+### Method 1: Online Use (Recommended)
 
-直接访问 [在线演示](https://1822520752.github.io/badmintonrapidscoreboard/) 即可使用，无需下载安装。
+Simply visit the [Live Demo](https://1822520752.github.io/badmintonrapidscoreboard/) to start using, no download required.
 
-### 方式二：本地文件
+### Method 2: Local File
 
-1. 下载 `index.html` 文件
-2. 双击用浏览器打开
-3. 开始使用！
+1. Download the `index.html` file
+2. Double-click to open in browser
+3. Start using!
 
-### 方式三：克隆仓库
+### Method 3: Clone Repository
 
 ```bash
-# 克隆仓库
+# Clone repository
 git clone https://github.com/1822520752/badmintonrapidscoreboard.git
 
-# 进入目录
+# Enter directory
 cd badmintonrapidscoreboard
 
-# 方式1: 直接打开
-# 双击 index.html 文件
+# Method 1: Direct open
+# Double-click index.html file
 
-# 方式2: 本地服务器（推荐）
+# Method 2: Local server (Recommended)
 python -m http.server 8000
-# 访问 http://localhost:8000
+# Visit http://localhost:8000
 
-# 方式3: Node.js 服务器
+# Method 3: Node.js server
 npx serve .
-# 访问 http://localhost:3000
+# Visit http://localhost:3000
 
-# 方式4: VS Code Live Server
-# 安装 Live Server 扩展，右键 index.html 选择 "Open with Live Server"
+# Method 4: VS Code Live Server
+# Install Live Server extension, right-click index.html and select "Open with Live Server"
 ```
 
-### 方式四：GitHub Pages
+### Method 4: GitHub Pages
 
-1. Fork 本仓库
-2. 进入 Settings → Pages
-3. Source 选择 `main` 分支
-4. 保存后即可通过 `https://你的用户名.github.io/badmintonrapidscoreboard/` 访问
+1. Fork this repository
+2. Go to Settings → Pages
+3. Select `main` branch as Source
+4. Save and access via `https://your-username.github.io/badmintonrapidscoreboard/`
 
 ---
 
-## 🎮 使用指南
+## 🎮 User Guide
 
-### 📋 快速上手（3分钟）
+### 📋 Quick Start (3 Minutes)
 
 ```
-第一步：设置选手
+Step 1: Set Players
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 点击「设置」按钮                                        │
-│  2. 输入选手1和选手2的名称                                  │
-│  3. 可选择设置目标分数                                      │
-│  4. 点击「保存」确认                                        │
+│  1. Click the "Settings" button                             │
+│  2. Enter names for Player 1 and Player 2                   │
+│  3. Optionally set target score                             │
+│  4. Click "Save" to confirm                                 │
 └─────────────────────────────────────────────────────────────┘
 
-第二步：开始比赛
+Step 2: Start Match
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 点击「开始比赛」按钮                                    │
-│  2. 计时器开始计时                                          │
-│  3. 点击大圆圈或「+」按钮为对应选手加分                     │
-│  4. 点击「-」按钮可撤销误操作                               │
+│  1. Click the "Start Match" button                          │
+│  2. Timer starts counting                                   │
+│  3. Click large circle or "+" button to add points          │
+│  4. Click "-" button to undo mistakes                       │
 └─────────────────────────────────────────────────────────────┘
 
-第三步：结束比赛
+Step 3: End Match
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 达到目标分数自动判定胜负                                │
-│  2. 显示胜利动画和比赛结果                                  │
-│  3. 可选择分享比赛结果                                      │
-│  4. 数据自动保存到历史记录                                  │
+│  1. Winner determined when target score reached             │
+│  2. Victory animation and match results displayed           │
+│  3. Option to share match results                           │
+│  4. Data auto-saved to history                              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 🏸 计分板操作详解
+### 🏸 Scoreboard Operations
 
-| 操作 | 方法 | 快捷键 |
+| Operation | Method | Shortcut |
 |------|------|:---:|
-| 开始比赛 | 点击「开始比赛」按钮 | `Space` |
-| 暂停比赛 | 点击「暂停」按钮 | `Space` |
-| 选手1加分 | 点击左侧大圆圈或「+」按钮 | `A` 或 `←` |
-| 选手2加分 | 点击右侧大圆圈或「+」按钮 | `L` 或 `→` |
-| 撤销操作 | 点击「-」按钮 | `Z` |
-| 重置比赛 | 长按「重置」按钮 | `R` |
-| 切换主题 | 点击主题按钮 | `T` |
-| 打开设置 | 点击设置按钮 | `S` |
+| Start Match | Click "Start Match" button | `Space` |
+| Pause Match | Click "Pause" button | `Space` |
+| Player 1 Score | Click left circle or "+" button | `A` or `←` |
+| Player 2 Score | Click right circle or "+" button | `L` or `→` |
+| Undo | Click "-" button | `Z` |
+| Reset Match | Long press "Reset" button | `R` |
+| Switch Theme | Click theme button | `T` |
+| Open Settings | Click settings button | `S` |
 
-### 👥 智能分组使用指南
+### 👥 Smart Grouping Guide
 
 ```
-步骤详解：
+Step-by-step Instructions:
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 进入「分组」页面                                        │
+│  1. Go to "Grouping" page                                   │
 │                                                             │
-│  2. 输入选手名单                                            │
-│     ├── 每行输入一个选手名字                                │
-│     ├── 支持中英文和数字                                    │
-│     └── 建议输入4-16人                                      │
+│  2. Enter player names                                      │
+│     ├── One name per line                                   │
+│     ├── Support Chinese, English, and numbers               │
+│     └── Recommended 4-16 players                            │
 │                                                             │
-│  3. 选择分组模式                                            │
-│     ├── 单打：1v1对战                                       │
-│     └── 双打：2v2对战                                       │
+│  3. Select grouping mode                                    │
+│     ├── Singles: 1v1 matches                                │
+│     └── Doubles: 2v2 matches                                │
 │                                                             │
-│  4. 点击「开始分组」                                        │
-│     ├── 系统自动生成对战组合                                │
-│     └── 可点击「重新分组」刷新                              │
+│  4. Click "Start Grouping"                                  │
+│     ├── System auto-generates match combinations            │
+│     └── Click "Re-group" to refresh                         │
 │                                                             │
-│  5. 保存分组结果                                            │
-│     ├── 点击「保存分组」                                    │
-│     └── 可在历史记录中查看                                  │
+│  5. Save grouping results                                   │
+│     ├── Click "Save Grouping"                               │
+│     └── View in history records                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 💰 费用分摊使用指南
+### 💰 Cost Splitting Guide
 
 ```
-分摊模式说明：
+Splitting Modes:
 ┌─────────────────────────────────────────────────────────────┐
-│  AA制                                                       │
-│  └── 总费用 ÷ 参与人数 = 每人应付                           │
+│  AA Style                                                   │
+│  └── Total Cost ÷ Number of Participants = Per Person       │
 │                                                             │
-│  按人头                                                     │
-│  └── 总费用 ÷ 总人头数 = 每人应付                           │
-│      （双打按2人计算）                                       │
+│  Per Person                                                 │
+│  └── Total Cost ÷ Total Headcount = Per Person              │
+│      (Doubles count as 2 people)                            │
 │                                                             │
-│  自定义比例                                                 │
-│  └── 按设定的比例分配费用                                   │
-│      （适合不同消费水平的人群）                              │
+│  Custom Ratio                                               │
+│  └── Distribute cost according to set ratios                │
+│      (Suitable for groups with different spending levels)   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 📊 数据管理
+### 📊 Data Management
 
 ```
-数据存储说明：
+Data Storage Information:
 ┌─────────────────────────────────────────────────────────────┐
-│  存储位置：浏览器 LocalStorage                              │
-│  存储容量：约 5MB                                           │
-│  数据安全：仅存储在本地，不上传服务器                        │
+│  Storage Location: Browser LocalStorage                     │
+│  Storage Capacity: ~5MB                                     │
+│  Data Security: Stored locally only, no server uploads      │
 │                                                             │
-│  数据备份：                                                 │
-│  1. 进入「设置」→「数据管理」                               │
-│  2. 点击「导出数据」                                        │
-│  3. 保存 JSON 文件到本地                                    │
+│  Data Backup:                                               │
+│  1. Go to "Settings" → "Data Management"                    │
+│  2. Click "Export Data"                                     │
+│  3. Save JSON file locally                                  │
 │                                                             │
-│  数据恢复：                                                 │
-│  1. 进入「设置」→「数据管理」                               │
-│  2. 点击「导入数据」                                        │
-│  3. 选择之前导出的 JSON 文件                                │
+│  Data Recovery:                                             │
+│  1. Go to "Settings" → "Data Management"                    │
+│  2. Click "Import Data"                                     │
+│  3. Select previously exported JSON file                    │
 │                                                             │
-│  清除数据：                                                 │
-│  1. 进入「设置」→「数据管理」                               │
-│  2. 点击「清除所有数据」                                    │
-│  3. 确认后数据将永久删除                                    │
+│  Clear Data:                                                │
+│  1. Go to "Settings" → "Data Management"                    │
+│  2. Click "Clear All Data"                                  │
+│  3. Confirm to permanently delete data                      │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🛠️ 技术栈
+## 🛠️ Tech Stack
 
 <div align="center">
 
-### 前端技术
+### Frontend Technologies
 
-| 技术 | 用途 | 版本 | 官网 |
+| Technology | Purpose | Version | Website |
 |:---:|:---:|:---:|:---:|
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | 页面结构 | HTML5 | [官网](https://developer.mozilla.org/zh-CN/docs/Web/HTML) |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | 样式设计 | CSS3 | [官网](https://developer.mozilla.org/zh-CN/docs/Web/CSS) |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | 交互逻辑 | ES6+ | [官网](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript) |
-| ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat&logo=chartdotjs&logoColor=white) | 数据可视化 | v4.x | [官网](https://www.chartjs.org/) |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | Page Structure | HTML5 | [Website](https://developer.mozilla.org/en-US/docs/Web/HTML) |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | Styling | CSS3 | [Website](https://developer.mozilla.org/en-US/docs/Web/CSS) |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | Interactivity | ES6+ | [Website](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat&logo=chartdotjs&logoColor=white) | Data Visualization | v4.x | [Website](https://www.chartjs.org/) |
 
-### 存储方案
+### Storage Solutions
 
-| 技术 | 用途 | 容量 | 说明 |
+| Technology | Purpose | Capacity | Description |
 |:---:|:---:|:---:|:---:|
-| LocalStorage | 本地持久化存储 | ~5MB | 存储比赛历史、设置等 |
-| SessionStorage | 会话临时存储 | ~5MB | 存储当前比赛状态 |
+| LocalStorage | Local Persistent Storage | ~5MB | Store match history, settings, etc. |
+| SessionStorage | Session Temporary Storage | ~5MB | Store current match state |
 
-### 开发工具
+### Development Tools
 
-| 工具 | 用途 |
+| Tool | Purpose |
 |:---:|:---:|
-| ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) | 代码编辑器 |
-| ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | 版本控制 |
-| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) | 代码托管 |
+| ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) | Code Editor |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | Version Control |
+| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) | Code Hosting |
 
 </div>
 
-### 🏗️ 技术架构
+### 🏗️ Technical Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           应用架构图                                     │
+│                           Application Architecture                       │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
 │    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐               │
-│    │   视图层     │    │   逻辑层     │    │   数据层     │               │
+│    │  View Layer │    │ Logic Layer │    │ Data Layer  │               │
 │    │   (View)    │    │  (Logic)    │    │   (Data)    │               │
 │    └──────┬──────┘    └──────┬──────┘    └──────┬──────┘               │
 │           │                  │                  │                       │
@@ -481,10 +481,10 @@ npx serve .
 │    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐               │
 │    │   HTML/CSS  │    │ JavaScript  │    │LocalStorage │               │
 │    │             │    │             │    │             │               │
-│    │ · 页面结构  │◄──►│ · 计分逻辑  │◄──►│ · 比赛记录  │               │
-│    │ · 样式主题  │    │ · 分组算法  │    │ · 选手数据  │               │
-│    │ · 动画效果  │    │ · 数据统计  │    │ · 用户设置  │               │
-│    │ · 响应布局  │    │ · 成就系统  │    │ · 缓存数据  │               │
+│    │ · Structure │◄──►│ · Scoring   │◄──►│ · Records   │               │
+│    │ · Themes    │    │ · Grouping  │    │ · Players   │               │
+│    │ · Animations│    │ · Statistics│    │ · Settings  │               │
+│    │ · Responsive│    │ · Achieve   │    │ · Cache     │               │
 │    └─────────────┘    └─────────────┘    └─────────────┘               │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
@@ -492,468 +492,468 @@ npx serve .
 
 ---
 
-## 📊 项目结构
+## 📊 Project Structure
 
 ```
 badmintonrapidscoreboard/
 │
-├── 📄 index.html              # 主页面（单文件应用）
-│   ├── <head>                 # 元数据、样式、字体
-│   ├── <body>                 # 页面结构
-│   │   ├── 计分板模块
-│   │   ├── 分组模块
-│   │   ├── 历史记录模块
-│   │   ├── 排行榜模块
-│   │   ├── 设置模块
-│   │   └── 弹窗组件
-│   └── <script>               # 业务逻辑代码
-│       ├── 数据管理
-│       ├── 计分逻辑
-│       ├── 分组算法
-│       ├── 统计计算
-│       ├── 成就系统
-│       ├── 主题切换
-│       └── 工具函数
+├── 📄 index.html              # Main page (Single-file application)
+│   ├── <head>                 # Metadata, styles, fonts
+│   ├── <body>                 # Page structure
+│   │   ├── Scoreboard module
+│   │   ├── Grouping module
+│   │   ├── History module
+│   │   ├── Leaderboard module
+│   │   ├── Settings module
+│   │   └── Modal components
+│   └── <script>               # Business logic code
+│       ├── Data management
+│       ├── Scoring logic
+│       ├── Grouping algorithm
+│       ├── Statistics calculation
+│       ├── Achievement system
+│       ├── Theme switching
+│       └── Utility functions
 │
-├── 📖 README.md               # 项目说明文档
-├── 📜 LICENSE                 # MIT 开源许可证
-├── 🚫 .gitignore              # Git 忽略配置
-└── 📝 仓库信息                # 仓库配置信息
+├── 📖 README.md               # Project documentation
+├── 📜 LICENSE                 # MIT License
+├── 🚫 .gitignore              # Git ignore config
+└── 📝 Repository Info         # Repository config info
 ```
 
-### 📁 代码模块说明
+### 📁 Code Module Description
 
 ```
-index.html 内部结构：
+index.html Internal Structure:
 ┌─────────────────────────────────────────────────────────────┐
-│  CSS 样式部分（约 2000 行）                                  │
-│  ├── CSS 变量定义（主题色、间距等）                          │
-│  ├── 基础样式重置                                           │
-│  ├── 布局样式（Flexbox/Grid）                               │
-│  ├── 组件样式（按钮、卡片、弹窗等）                          │
-│  ├── 动画定义（过渡、关键帧动画）                            │
-│  └── 响应式媒体查询                                         │
+│  CSS Section (~2000 lines)                                  │
+│  ├── CSS variable definitions (colors, spacing, etc.)       │
+│  ├── Base style reset                                       │
+│  ├── Layout styles (Flexbox/Grid)                           │
+│  ├── Component styles (buttons, cards, modals, etc.)        │
+│  ├── Animation definitions (transitions, keyframes)         │
+│  └── Responsive media queries                               │
 ├─────────────────────────────────────────────────────────────┤
-│  HTML 结构部分（约 500 行）                                  │
-│  ├── 导航栏                                                 │
-│  ├── 主计分板区域                                           │
-│  ├── 功能页面容器                                           │
-│  ├── 弹窗组件                                               │
-│  └── 底部信息                                               │
+│  HTML Structure Section (~500 lines)                        │
+│  ├── Navigation bar                                         │
+│  ├── Main scoreboard area                                   │
+│  ├── Feature page containers                                │
+│  ├── Modal components                                       │
+│  └── Footer information                                     │
 ├─────────────────────────────────────────────────────────────┤
-│  JavaScript 逻辑部分（约 3000 行）                           │
-│  ├── 全局变量和状态管理                                      │
-│  ├── 数据持久化模块                                         │
-│  ├── 计分核心逻辑                                           │
-│  ├── 分组算法实现                                           │
-│  ├── 统计计算模块                                           │
-│  ├── 成就系统实现                                           │
-│  ├── UI 交互处理                                            │
-│  ├── 主题切换逻辑                                           │
-│  └── 工具函数库                                             │
+│  JavaScript Logic Section (~3000 lines)                     │
+│  ├── Global variables and state management                  │
+│  ├── Data persistence module                                │
+│  ├── Scoring core logic                                     │
+│  ├── Grouping algorithm implementation                      │
+│  ├── Statistics calculation module                          │
+│  ├── Achievement system implementation                       │
+│  ├── UI interaction handling                                │
+│  ├── Theme switching logic                                  │
+│  └── Utility function library                               │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🏅 成就系统
+## 🏅 Achievement System
 
 <div align="center">
 
-### 🎮 12个成就等你解锁
+### 🎮 12 Achievements to Unlock
 
-| 图标 | 成就名称 | 解锁条件 | 稀有度 |
+| Icon | Achievement Name | Unlock Condition | Rarity |
 |:---:|:---:|:---:|:---:|
-| 🏸 | 初次登场 | 完成第一场比赛 | ⭐ |
-| 🎯 | 小有成就 | 完成10场比赛 | ⭐ |
-| 🏆 | 球场老将 | 完成50场比赛 | ⭐⭐⭐ |
-| 🎉 | 首胜 | 赢得第一场比赛 | ⭐ |
-| 🥈 | 常胜将军 | 赢得10场比赛 | ⭐⭐ |
-| 🥇 | 羽坛王者 | 赢得25场比赛 | ⭐⭐⭐ |
-| 🔥 | 三连胜 | 连续赢得3场比赛 | ⭐⭐ |
-| 💥 | 五连胜 | 连续赢得5场比赛 | ⭐⭐⭐ |
-| ⏱️ | 球痴 | 累计打球1小时 | ⭐ |
-| ⌛ | 球瘾 | 累计打球5小时 | ⭐⭐ |
-| ✨ | 完美胜利 | 一局比赛零封对手 | ⭐⭐ |
-| 🎮 | 加分赛专家 | 经历3次加分赛 | ⭐⭐ |
+| 🏸 | First Appearance | Complete first match | ⭐ |
+| 🎯 | Getting Started | Complete 10 matches | ⭐ |
+| 🏆 | Court Veteran | Complete 50 matches | ⭐⭐⭐ |
+| 🎉 | First Victory | Win first match | ⭐ |
+| 🥈 | Consistent Winner | Win 10 matches | ⭐⭐ |
+| 🥇 | Badminton King | Win 25 matches | ⭐⭐⭐ |
+| 🔥 | Triple Streak | Win 3 consecutive matches | ⭐⭐ |
+| 💥 | Five Streak | Win 5 consecutive matches | ⭐⭐⭐ |
+| ⏱️ | Enthusiast | Accumulate 1 hour of play | ⭐ |
+| ⌛ | Addict | Accumulate 5 hours of play | ⭐⭐ |
+| ✨ | Perfect Victory | Win a game without opponent scoring | ⭐⭐ |
+| 🎮 | Deuce Expert | Experience 3 deuce games | ⭐⭐ |
 
 </div>
 
-### 🏆 成就系统说明
+### 🏆 Achievement System Description
 
 ```
-成就解锁机制：
+Achievement Unlock Mechanism:
 ┌─────────────────────────────────────────────────────────────┐
-│  1. 实时检测：每次比赛结束后自动检测是否达成成就             │
-│  2. 弹窗提示：达成成就时显示庆祝动画                        │
-│  3. 永久保存：成就数据存储在本地，不会丢失                  │
-│  4. 分享功能：可将成就卡片分享给好友                        │
-│  5. 隐藏成就：部分成就需要特殊条件才能解锁                  │
+│  1. Real-time Detection: Auto-check after each match        │
+│  2. Popup Notification: Show celebration animation on unlock│
+│  3. Permanent Save: Achievement data stored locally         │
+│  4. Share Function: Share achievement cards with friends    │
+│  5. Hidden Achievements: Some require special conditions    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🎨 主题预览
+## 🎨 Themes
 
 <div align="center">
 
-### 🌈 6套精美主题
+### 🌈 6 Beautiful Themes
 
-| 主题名称 | 主色调 | 适用场景 | 预览 |
+| Theme Name | Primary Color | Best For | Preview |
 |:---:|:---:|:---:|:---:|
-| 💜 暗夜紫 | #6839E8 | 夜间使用、个性风格 | ![暗夜紫](https://via.placeholder.com/100x50/6839E8/FFFFFF?text=暗夜紫) |
-| 🧡 活力橙 | #FF6B35 | 运动场景、活力四射 | ![活力橙](https://via.placeholder.com/100x50/FF6B35/FFFFFF?text=活力橙) |
-| 💙 天空蓝 | #00D9FF | 清爽风格、日间使用 | ![天空蓝](https://via.placeholder.com/100x50/00D9FF/FFFFFF?text=天空蓝) |
-| 💚 森林绿 | #2ECC71 | 护眼模式、自然风格 | ![森林绿](https://via.placeholder.com/100x50/2ECC71/FFFFFF?text=森林绿) |
-| 💗 樱花粉 | #FFB6C1 | 女性用户、温柔风格 | ![樱花粉](https://via.placeholder.com/100x50/FFB6C1/FFFFFF?text=樱花粉) |
-| 🖤 黑金商务 | #1A1A2E | 商务场景、高端风格 | ![黑金商务](https://via.placeholder.com/100x50/1A1A2E/FFD700?text=黑金商务) |
+| 💜 Night Purple | #6839E8 | Night use, Personal style | ![Night Purple](https://via.placeholder.com/100x50/6839E8/FFFFFF?text=Purple) |
+| 🧡 Vibrant Orange | #FF6B35 | Sports, Energetic | ![Vibrant Orange](https://via.placeholder.com/100x50/FF6B35/FFFFFF?text=Orange) |
+| 💙 Sky Blue | #00D9FF | Fresh style, Day use | ![Sky Blue](https://via.placeholder.com/100x50/00D9FF/FFFFFF?text=Blue) |
+| 💚 Forest Green | #2ECC71 | Eye protection, Natural | ![Forest Green](https://via.placeholder.com/100x50/2ECC71/FFFFFF?text=Green) |
+| 💗 Sakura Pink | #FFB6C1 | Feminine, Gentle | ![Sakura Pink](https://via.placeholder.com/100x50/FFB6C1/FFFFFF?text=Pink) |
+| 🖤 Black Gold | #1A1A2E | Business, Premium | ![Black Gold](https://via.placeholder.com/100x50/1A1A2E/FFD700?text=Black+Gold) |
 
 </div>
 
-### 🎨 主题切换
+### 🎨 Theme Switching
 
 ```
-切换方式：
+Switching Methods:
 ┌─────────────────────────────────────────────────────────────┐
-│  方式1：点击顶部主题按钮，循环切换                          │
-│  方式2：进入设置页面，选择喜欢的主题                        │
-│  方式3：使用快捷键 T 快速切换                               │
+│  Method 1: Click theme button at top, cycle through         │
+│  Method 2: Go to settings page, select preferred theme      │
+│  Method 3: Use shortcut key T to quick switch               │
 │                                                             │
-│  记忆功能：                                                 │
-│  └── 自动记住上次选择的主题，下次打开自动应用              │
+│  Memory Function:                                           │
+│  └── Auto-remember last selected theme, apply on next open │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📱 移动端适配
+## 📱 Mobile Support
 
 <div align="center">
 
-### 📲 完美适配各种设备
+### 📲 Perfect Adaptation for All Devices
 
-| 设备类型 | 屏幕尺寸 | 适配状态 |
+| Device Type | Screen Size | Status |
 |:---:|:---:|:---:|
-| 📱 手机 | < 768px | ✅ 完美适配 |
-| 📱 平板 | 768px - 1024px | ✅ 完美适配 |
-| 💻 笔记本 | 1024px - 1440px | ✅ 完美适配 |
-| 🖥️ 台式机 | > 1440px | ✅ 完美适配 |
+| 📱 Phone | < 768px | ✅ Perfect |
+| 📱 Tablet | 768px - 1024px | ✅ Perfect |
+| 💻 Laptop | 1024px - 1440px | ✅ Perfect |
+| 🖥️ Desktop | > 1440px | ✅ Perfect |
 
 </div>
 
-### 📱 移动端优化细节
+### 📱 Mobile Optimization Details
 
 ```
-移动端专属优化：
+Mobile-Specific Optimizations:
 ┌─────────────────────────────────────────────────────────────┐
-│  触摸优化                                                   │
-│  ├── 大按钮设计，方便触摸操作                               │
-│  ├── 增加点击区域，减少误触                                 │
-│  ├── 支持双击快捷操作                                       │
-│  └── 支持滑动手势                                           │
+│  Touch Optimization                                         │
+│  ├── Large button design for easy touch                     │
+│  ├── Increased click area to reduce mis-taps                │
+│  ├── Support double-tap shortcuts                           │
+│  └── Support swipe gestures                                 │
 │                                                             │
-│  显示优化                                                   │
-│  ├── 隐藏滚动条，界面更整洁                                 │
-│  ├── 自适应字体大小                                         │
-│  ├── 优化横屏显示                                           │
-│  └── 支持全屏模式                                           │
+│  Display Optimization                                       │
+│  ├── Hidden scrollbars for cleaner interface                │
+│  ├── Adaptive font sizes                                    │
+│  ├── Optimized landscape display                            │
+│  └── Support fullscreen mode                                │
 │                                                             │
-│  性能优化                                                   │
-│  ├── 减少动画复杂度                                         │
-│  ├── 延迟加载非关键资源                                     │
-│  └── 优化渲染性能                                           │
+│  Performance Optimization                                   │
+│  ├── Reduced animation complexity                           │
+│  ├── Lazy loading of non-critical resources                 │
+│  └── Optimized rendering performance                        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🔐 数据安全
+## 🔐 Data Security
 
 <div align="center">
 
-### 🛡️ 你的数据，只属于你
+### 🛡️ Your Data Belongs to You
 
 </div>
 
 ```
-数据安全说明：
+Data Security Information:
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│  ✅ 本地存储                                                │
-│     所有数据存储在你的浏览器本地，不会上传到任何服务器       │
+│  ✅ Local Storage                                           │
+│     All data stored in your browser locally, never uploaded │
 │                                                             │
-│  ✅ 无需注册                                                │
-│     不需要账号，不需要登录，没有任何个人信息收集             │
+│  ✅ No Registration Required                                │
+│     No account needed, no login, no personal data collected │
 │                                                             │
-│  ✅ 无网络依赖                                              │
-│     完全离线可用，断网也能正常使用                           │
+│  ✅ No Network Dependency                                   │
+│     Fully offline capable, works without internet          │
 │                                                             │
-│  ✅ 数据导出                                                │
-│     支持导出所有数据为 JSON 文件，方便备份和迁移             │
+│  ✅ Data Export                                             │
+│     Export all data as JSON file for backup and migration   │
 │                                                             │
-│  ✅ 数据清除                                                │
-│     可随时清除所有数据，彻底删除不留痕迹                     │
+│  ✅ Data Clearing                                           │
+│     Clear all data anytime, permanently delete with no trace│
 │                                                             │
-│  ⚠️ 注意事项                                                │
-│     清除浏览器数据会删除应用数据，请及时备份                 │
+│  ⚠️ Important Note                                          │
+│     Clearing browser data will delete app data, backup often│
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## ❓ 常见问题
+## ❓ FAQ
 
 <details>
-<summary><b>🔧 安装和使用问题</b></summary>
+<summary><b>🔧 Installation and Usage</b></summary>
 
-### Q: 需要安装吗？
-**A:** 不需要！这是一个纯前端应用，直接用浏览器打开 `index.html` 文件即可使用，或者访问在线演示地址。
+### Q: Do I need to install anything?
+**A:** No! This is a pure frontend application. Simply open `index.html` in your browser or visit the live demo.
 
-### Q: 支持哪些浏览器？
-**A:** 支持所有现代浏览器：
-- ✅ Chrome（推荐）
+### Q: Which browsers are supported?
+**A:** All modern browsers are supported:
+- ✅ Chrome (Recommended)
 - ✅ Firefox
 - ✅ Safari
 - ✅ Edge
-- ❌ IE（不支持）
+- ❌ IE (Not supported)
 
-### Q: 手机上能用吗？
-**A:** 完全可以！本应用采用响应式设计，完美适配手机、平板等各种设备。
+### Q: Can I use it on my phone?
+**A:** Absolutely! This app uses responsive design and works perfectly on phones, tablets, and all devices.
 
-### Q: 需要联网吗？
-**A:** 不需要！本应用完全离线可用，断网状态下也能正常使用所有功能。
-
-</details>
-
-<details>
-<summary><b>💾 数据相关问题</b></summary>
-
-### Q: 数据存储在哪里？
-**A:** 数据存储在浏览器的 LocalStorage 中，只保存在你的设备本地，不会上传到任何服务器。
-
-### Q: 数据会丢失吗？
-**A:** 正常使用不会丢失。但以下情况会导致数据丢失：
-- 清除浏览器缓存/数据
-- 使用隐私/无痕模式
-- 卸载浏览器
-建议定期导出数据备份。
-
-### Q: 如何备份数据？
-**A:** 进入「设置」→「数据管理」→「导出数据」，会下载一个 JSON 文件，妥善保存即可。
-
-### Q: 如何恢复数据？
-**A:** 进入「设置」→「数据管理」→「导入数据」，选择之前导出的 JSON 文件即可恢复。
-
-### Q: 换手机/电脑怎么迁移数据？
-**A:** 在旧设备上导出数据，将 JSON 文件传到新设备，然后在新设备上导入即可。
+### Q: Do I need internet?
+**A:** No! This app works completely offline. All features are available without internet connection.
 
 </details>
 
 <details>
-<summary><b>🎮 功能使用问题</b></summary>
+<summary><b>💾 Data Related Questions</b></summary>
 
-### Q: 如何修改目标分数？
-**A:** 在比赛开始前，点击「设置」按钮，可以自定义目标分数（默认21分）。
+### Q: Where is my data stored?
+**A:** Data is stored in your browser's LocalStorage, only on your local device, never uploaded to any server.
 
-### Q: 如何撤销误操作？
-**A:** 点击「-」按钮可以撤销上一次加分操作，支持多次撤销。
+### Q: Will my data be lost?
+**A:** Normal usage won't cause data loss. However, these situations will delete data:
+- Clearing browser cache/data
+- Using private/incognito mode
+- Uninstalling browser
+We recommend regular data backups.
 
-### Q: 分组后可以重新分组吗？
-**A:** 可以！点击「重新分组」按钮会生成新的对战组合。
+### Q: How do I backup my data?
+**A:** Go to "Settings" → "Data Management" → "Export Data", a JSON file will be downloaded. Save it safely.
 
-### Q: 成就如何解锁？
-**A:** 成就会在达成条件时自动解锁，无需手动操作。解锁后会有弹窗提示。
+### Q: How do I restore my data?
+**A:** Go to "Settings" → "Data Management" → "Import Data", select the previously exported JSON file.
 
-### Q: 如何分享比赛结果？
-**A:** 比赛结束后，点击「分享」按钮可以生成精美的分享卡片，支持保存图片或分享到社交平台。
+### Q: How do I transfer data to a new device?
+**A:** Export data on the old device, transfer the JSON file to the new device, then import it.
 
 </details>
 
 <details>
-<summary><b>🐛 故障排除</b></summary>
+<summary><b>🎮 Feature Usage Questions</b></summary>
 
-### Q: 页面打不开/白屏？
-**A:** 请尝试：
-1. 刷新页面
-2. 清除浏览器缓存
-3. 更换浏览器
-4. 检查是否使用了过旧的浏览器版本
+### Q: How do I change the target score?
+**A:** Before starting a match, click the "Settings" button to customize the target score (default is 21).
 
-### Q: 数据突然没了？
-**A:** 可能原因：
-1. 使用了隐私/无痕模式
-2. 清除了浏览器数据
-3. 浏览器存储空间不足
-建议定期备份数据。
+### Q: How do I undo a mistake?
+**A:** Click the "-" button to undo the last scoring action. Multiple undos are supported.
 
-### Q: 动画卡顿？
-**A:** 可能原因：
-1. 设备性能较低
-2. 浏览器版本过旧
-3. 同时打开太多标签页
-建议关闭不必要的标签页，或更新浏览器。
+### Q: Can I re-group after grouping?
+**A:** Yes! Click the "Re-group" button to generate new match combinations.
+
+### Q: How do achievements unlock?
+**A:** Achievements automatically unlock when conditions are met. A popup will appear when unlocked.
+
+### Q: How do I share match results?
+**A:** After a match ends, click the "Share" button to generate a beautiful share card. Save as image or share to social media.
+
+</details>
+
+<details>
+<summary><b>🐛 Troubleshooting</b></summary>
+
+### Q: Page won't open / White screen?
+**A:** Please try:
+1. Refresh the page
+2. Clear browser cache
+3. Try a different browser
+4. Check if using an outdated browser version
+
+### Q: Data suddenly disappeared?
+**A:** Possible causes:
+1. Used private/incognito mode
+2. Cleared browser data
+3. Browser storage full
+We recommend regular data backups.
+
+### Q: Animations lagging?
+**A:** Possible causes:
+1. Low device performance
+2. Outdated browser version
+3. Too many tabs open
+Try closing unnecessary tabs or updating your browser.
 
 </details>
 
 ---
 
-## 🗺️ 未来规划
+## 🗺️ Roadmap
 
 <div align="center">
 
-### 🚀 Roadmap
+### 🚀 Development Roadmap
 
 </div>
 
 ```
-v2.1 计划中
+v2.1 Planned
 ┌─────────────────────────────────────────────────────────────┐
-│  🔜 多语言支持（英文、日文等）                               │
-│  🔜 PWA 支持（可安装到桌面）                                 │
-│  🔜 更多主题选择                                             │
-│  🔜 声音提示功能                                             │
+│  🔜 Multi-language support (English, Japanese, etc.)        │
+│  🔜 PWA support (Install to desktop)                        │
+│  🔜 More theme options                                       │
+│  🔜 Sound notification feature                              │
 └─────────────────────────────────────────────────────────────┘
 
-v2.2 计划中
+v2.2 Planned
 ┌─────────────────────────────────────────────────────────────┐
-│  🔜 团队赛模式                                               │
-│  🔜 淘汰赛模式                                               │
-│  🔜 循环赛模式                                               │
-│  🔜 比赛数据云端同步（可选）                                 │
+│  🔜 Team tournament mode                                     │
+│  🔜 Knockout tournament mode                                │
+│  🔜 Round-robin tournament mode                             │
+│  🔜 Cloud sync (optional)                                   │
 └─────────────────────────────────────────────────────────────┘
 
-v3.0 远期规划
+v3.0 Future Plans
 ┌─────────────────────────────────────────────────────────────┐
-│  🔜 小程序版本                                               │
-│  🔜 APP 版本                                                 │
-│  🔜 AI 战术分析                                              │
-│  🔜 社区功能                                                 │
+│  🔜 Mini-program version                                    │
+│  🔜 Mobile APP version                                      │
+│  🔜 AI tactical analysis                                    │
+│  🔜 Community features                                      │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📝 更新日志
+## 📝 Changelog
 
 <details>
-<summary><b>v2.0.0 (最新版本) - 2025年</b></summary>
+<summary><b>v2.0.0 (Latest) - 2025</b></summary>
 
-### 🎉 重大更新
+### 🎉 Major Update
 
-**全新设计**
-- ✨ 全新 UI 设计，视觉体验大幅升级
-- 🎨 新增 6 套主题切换
-- 🌈 全新的动画效果
+**Brand New Design**
+- ✨ Complete UI redesign, visual experience greatly improved
+- 🎨 Added 6 theme options
+- 🌈 All-new animation effects
 
-**新增功能**
-- 📊 新增数据可视化图表（Chart.js）
-- 🏆 新增排行榜系统
-- 📈 新增选手能力分析
-- 🎉 新增成就系统（12个成就）
-- 🚀 新增新手引导
-- ⚡ 新增快捷操作面板
+**New Features**
+- 📊 Added data visualization charts (Chart.js)
+- 🏆 Added leaderboard system
+- 📈 Added player skill analysis
+- 🎉 Added achievement system (12 achievements)
+- 🚀 Added beginner's guide
+- ⚡ Added quick action panel
 
-**优化改进**
-- 📱 全面优化移动端体验
-- 🔧 重构代码架构，性能提升 50%
-- 🐛 修复已知问题
+**Optimizations**
+- 📱 Comprehensive mobile experience optimization
+- 🔧 Refactored code architecture, 50% performance boost
+- 🐛 Fixed known issues
 
 </details>
 
 <details>
-<summary><b>v1.0.0 - 初始版本</b></summary>
+<summary><b>v1.0.0 - Initial Release</b></summary>
 
-### 🎊 首次发布
+### 🎊 First Release
 
-**核心功能**
-- 🏸 基础计分功能
-- 👥 智能分组
-- 💰 费用分摊
-- 📜 历史记录
-- 🎨 基础主题
+**Core Features**
+- 🏸 Basic scoring functionality
+- 👥 Smart grouping
+- 💰 Cost splitting
+- 📜 History records
+- 🎨 Basic themes
 
 </details>
 
 ---
 
-## 🤝 贡献指南
+## 🤝 Contributing
 
 <div align="center">
 
-### 💖 感谢你的关注！
+### 💖 Thank You for Your Interest!
 
-我们欢迎所有形式的贡献！
+We welcome all forms of contributions!
 
 </div>
 
-### 🎯 如何贡献
+### 🎯 How to Contribute
 
 ```
-贡献方式：
+Contribution Methods:
 ┌─────────────────────────────────────────────────────────────┐
-│  🐛 提交 Bug 报告                                           │
-│     发现问题？请在 Issues 中详细描述                         │
+│  🐛 Submit Bug Reports                                      │
+│     Found an issue? Please describe in detail in Issues     │
 │                                                             │
-│  💡 提出新功能建议                                           │
-│     有好的想法？欢迎在 Issues 中讨论                         │
+│  💡 Suggest New Features                                    │
+│     Have a great idea? Discuss in Issues                    │
 │                                                             │
-│  🔧 提交代码                                                 │
-│     Fork → 修改 → Pull Request                              │
+│  🔧 Submit Code                                             │
+│     Fork → Modify → Pull Request                            │
 │                                                             │
-│  📖 完善文档                                                 │
-│     帮助改进 README 或添加使用教程                           │
+│  📖 Improve Documentation                                   │
+│     Help improve README or add tutorials                    │
 │                                                             │
-│  🌟 Star 支持                                                │
-│     给项目点个 Star，让更多人看到                            │
+│  🌟 Star Support                                            │
+│     Give the project a Star to help more people see it      │
 │                                                             │
-│  📢 推荐给朋友                                               │
-│     分享给身边喜欢羽毛球的朋友                               │
+│  📢 Recommend to Friends                                    │
+│     Share with badminton-loving friends                     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 🔧 开发指南
+### 🔧 Development Guide
 
 ```bash
-# 1. Fork 本仓库
+# 1. Fork this repository
 
-# 2. 克隆你的 Fork
-git clone https://github.com/你的用户名/badmintonrapidscoreboard.git
+# 2. Clone your fork
+git clone https://github.com/your-username/badmintonrapidscoreboard.git
 
-# 3. 创建特性分支
+# 3. Create feature branch
 git checkout -b feature/AmazingFeature
 
-# 4. 进行修改并提交
+# 4. Make changes and commit
 git add .
 git commit -m 'Add some AmazingFeature'
 
-# 5. 推送到你的 Fork
+# 5. Push to your fork
 git push origin feature/AmazingFeature
 
-# 6. 创建 Pull Request
-# 在 GitHub 上提交 PR，描述你的修改内容
+# 6. Create Pull Request
+# Submit PR on GitHub, describe your changes
 ```
 
-### 📋 代码规范
+### 📋 Code Standards
 
-- 保持代码简洁清晰
-- 添加必要的注释
-- 遵循现有代码风格
-- 测试你的修改
+- Keep code clean and clear
+- Add necessary comments
+- Follow existing code style
+- Test your changes
 
 ---
 
-## 📄 许可证
+## 📄 License
 
 <div align="center">
 
-本项目采用 [MIT License](LICENSE) 开源许可证。
+This project is licensed under the [MIT License](LICENSE).
 
 ```
 MIT License
 
-Copyright (c) 2025 试界 TryWorld
+Copyright (c) 2025 TryWorld
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -974,29 +974,29 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-**你可以自由地：**
-- ✅ 商业使用
-- ✅ 修改代码
-- ✅ 分发代码
-- ✅ 私人使用
+**You are free to:**
+- ✅ Commercial use
+- ✅ Modify code
+- ✅ Distribute code
+- ✅ Private use
 
-**唯一要求：保留版权声明**
+**Only requirement: Keep the copyright notice**
 
 </div>
 
 ---
 
-## 👨‍💻 作者
+## 👨‍💻 Author
 
 <div align="center">
 
-### 试界 TryWorld
+### TryWorld
 
 <img src="https://img.shields.io/badge/GitHub-1822520752-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 
-[![GitHub](https://img.shields.io/badge/关注我-Follow-blue?style=for-the-badge&logo=github)](https://github.com/1822520752)
+[![GitHub](https://img.shields.io/badge/Follow_Me-Follow-blue?style=for-the-badge&logo=github)](https://github.com/1822520752)
 
-**热爱编程，热爱羽毛球 🏸**
+**Love Coding, Love Badminton 🏸**
 
 </div>
 
@@ -1006,7 +1006,7 @@ SOFTWARE.
 
 <div align="center">
 
-### 如果这个项目对你有帮助，请给一个 ⭐ Star 支持一下！
+### If this project helps you, please give it a ⭐ Star!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=1822520752/badmintonrapidscoreboard&type=Date)](https://star-history.com/#1822520752/badmintonrapidscoreboard&Date)
 
@@ -1016,18 +1016,18 @@ SOFTWARE.
 
 <div align="center">
 
-## 🙏 致谢
+## 🙏 Acknowledgments
 
-感谢所有为这个项目做出贡献的人！
+Thanks to everyone who contributed to this project!
 
-感谢所有使用和支持这个项目的用户！
+Thanks to all users for their support!
 
-**Made with ❤️ by 试界 TryWorld**
+**Made with ❤️ by TryWorld**
 
-**🏸 祝你打球愉快，身体健康！**
+**🏸 Enjoy your game, stay healthy!**
 
 ---
 
-<img src="https://img.shields.io/badge/如果觉得有用，请给个Star-⭐-yellow?style=for-the-badge" alt="Star">
+<img src="https://img.shields.io/badge/If_helpful-Please_Star-⭐-yellow?style=for-the-badge" alt="Star">
 
 </div>
