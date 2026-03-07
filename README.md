@@ -285,35 +285,31 @@ Charts, leaderboards, achievements
 
 <div align="center">
 
-### 🏸 Main Scoreboard Interface
+> 🎯 **[在线体验查看真实效果 →](https://1822520752.github.io/badmintonrapidscoreboard/)**
 
-| Main Interface | Match In Progress | Victory Animation |
-|:---:|:---:|:---:|
-| ![Main Interface](./screenshots/scoreboard-main.png) | ![Match In Progress](./screenshots/scoreboard-match.png) | ![Victory](./screenshots/scoreboard-victory.png) |
+### 🏸 核心功能模块
 
-### 👥 Smart Grouping
+| 模块 | 功能描述 |
+|:---:|:---|
+| 🏸 **记分板** | 实时计分、计时器、赛制选择、撤销操作 |
+| 👥 **智能分组** | 随机分组、实力平衡、轮换赛制 |
+| 💰 **费用分摊** | 平均分摊、自定义比例、按时长分摊 |
+| 📊 **历史记录** | 比赛统计、月度趋势、胜负分布 |
+| 🏆 **排行榜** | 胜场、参赛、胜率、时长排名 |
+| 📈 **能力分析** | 基础统计、排名情况、近期表现 |
+| 🏅 **成就系统** | 12个成就、解锁进度、分享卡片 |
+| ⚙️ **设置** | 6种主题、比赛设置、数据管理 |
 
-| Enter Players | Grouping Results | Start Match |
-|:---:|:---:|:---:|
-| ![Enter Players](./screenshots/grouping-input.png) | ![Grouping Results](./screenshots/grouping-result.png) | ![Start Match](./screenshots/grouping-start.png) |
+### 🎨 6种精美主题
 
-### 📊 Statistics & Analytics
-
-| History Records | Leaderboard | Skill Analysis |
-|:---:|:---:|:---:|
-| ![History Records](./screenshots/history-records.png) | ![Leaderboard](./screenshots/leaderboard.png) | ![Skill Analysis](./screenshots/skill-analysis.png) |
-
-### 🎨 Theme Gallery
-
-| Night Purple | Vibrant Orange | Sky Blue |
-|:---:|:---:|:---:|
-| ![Night Purple](./screenshots/theme-purple.png) | ![Vibrant Orange](./screenshots/theme-orange.png) | ![Sky Blue](./screenshots/theme-blue.png) |
-
-| Forest Green | Sakura Pink | Black Gold |
-|:---:|:---:|:---:|
-| ![Forest Green](./screenshots/theme-green.png) | ![Sakura Pink](./screenshots/theme-pink.png) | ![Black Gold](./screenshots/theme-blackgold.png) |
-
-> 💡 **提示**: 如果图片未显示，请访问 [在线演示](https://1822520752.github.io/badmintonrapidscoreboard/) 查看实际效果
+| 主题 | 主色调 | 适用场景 |
+|:---:|:---:|:---|
+| 💜 **暗夜紫** | #6839E8 | 夜间使用、个人风格 |
+| 🧡 **活力橙** | #FF6B35 | 运动场景、充满活力 |
+| 💙 **天空蓝** | #00D9FF | 清新风格、白天使用 |
+| 💚 **森林绿** | #2ECC71 | 护眼模式、自然风格 |
+| 💗 **樱花粉** | #FFB6C1 | 女性风格、温柔色调 |
+| 🖤 **黑金商务** | #1A1A2E | 商务风格、高端质感 |
 
 </div>
 
@@ -570,7 +566,7 @@ We recommend regular data backups.
 A: Go to "Settings" → "Data Management" → "Export Data", a JSON file will be downloaded. Save it safely.
 
 **Q: How do I restore my data?**
-A: Go to "Settings" → "Data Management" → "Import Data", select the previously exported JSON file.
+A: Go to "Settings" → "Data Management" → "Data Recovery", select the previously exported JSON file.
 
 </details>
 
