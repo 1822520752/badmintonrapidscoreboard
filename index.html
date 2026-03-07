@@ -3337,6 +3337,636 @@
                 font-size: 0.85rem;
             }
 
+            /* 模态框移动端优化 */
+            .modal-overlay {
+                padding: 8px;
+            }
+
+            .modal-content {
+                max-width: 100%;
+                max-height: 90vh;
+                overflow-y: auto;
+                border-radius: 16px;
+            }
+
+            .share-card-modal {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .avatar-manager-modal {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            /* 通知弹窗移动端优化 */
+            .notification {
+                left: 8px;
+                right: 8px;
+                max-width: calc(100% - 16px);
+                padding: 12px 16px;
+            }
+
+            /* 头部移动端优化 */
+            header {
+                padding: 12px 0;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .version-badge {
+                font-size: 0.65rem;
+                padding: 3px 8px;
+            }
+
+            /* 底部导航优化 */
+            footer {
+                padding: 16px 12px;
+            }
+
+            .footer-content {
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+
+            /* 滚动区域优化 */
+            .history-list,
+            .leaderboard-list {
+                max-height: 50vh;
+                overflow-y: auto;
+            }
+
+            /* 表格优化 */
+            .expense-result-table {
+                font-size: 0.85rem;
+            }
+
+            .expense-result-table th,
+            .expense-result-table td {
+                padding: 8px 6px;
+            }
+
+            /* 按钮组优化 */
+            .control-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .control-btn {
+                flex: 1;
+                min-width: 70px;
+                max-width: calc(50% - 4px);
+            }
+
+            /* 输入框优化 */
+            input, textarea, select {
+                font-size: 16px !important;
+            }
+
+            /* 防止iOS缩放 */
+            input[type="text"],
+            input[type="number"],
+            textarea {
+                font-size: 16px;
+            }
+
+            /* 触摸优化 */
+            .btn,
+            .control-btn,
+            .mode-chip,
+            .tab-item,
+            .theme-card,
+            .avatar-item,
+            .achievement-card,
+            .leaderboard-item,
+            .history-card {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            /* 文字截断优化 */
+            .team-name-input {
+                max-width: 80px;
+            }
+
+            .leaderboard-name,
+            .history-players {
+                max-width: 120px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            /* 图表优化 */
+            .chart-canvas-container {
+                height: 180px;
+            }
+
+            canvas {
+                max-width: 100%;
+                height: auto !important;
+            }
+
+            /* 分享卡片优化 */
+            .share-preview {
+                transform: scale(0.85);
+                transform-origin: top center;
+            }
+
+            /* 头像选择器优化 */
+            .avatar-library {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 8px;
+            }
+
+            .avatar-item {
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+
+            /* 成就卡片优化 */
+            .achievement-card {
+                padding: 10px;
+            }
+
+            .achievement-card-icon {
+                font-size: 1.3rem;
+            }
+
+            /* 能力雷达图优化 */
+            .ability-radar-container {
+                height: 200px;
+            }
+
+            /* 滚动提示优化 */
+            .scroll-hint {
+                display: none;
+            }
+        }
+
+        /* 超小屏幕优化 (小于360px) */
+        @media (max-width: 360px) {
+            body {
+                font-size: 13px;
+            }
+
+            .container {
+                padding: 4px;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.75rem;
+            }
+
+            .input-section {
+                padding: 10px;
+                border-radius: 12px;
+            }
+
+            .players-textarea {
+                min-height: 80px;
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+
+            .btn {
+                padding: 6px 10px;
+                font-size: 0.8rem;
+            }
+
+            .btn-small {
+                padding: 4px 8px;
+                font-size: 0.7rem;
+            }
+
+            .category-achievements {
+                grid-template-columns: 1fr 1fr;
+                gap: 6px;
+            }
+
+            .theme-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+            }
+
+            .stats-summary-details {
+                gap: 6px;
+            }
+
+            .detail-value {
+                font-size: 1rem;
+            }
+
+            .rank-cards {
+                gap: 6px;
+            }
+
+            .rank-card .rank-value {
+                font-size: 1.1rem;
+            }
+
+            .score-circle {
+                width: 90px;
+                height: 90px;
+            }
+
+            .score-number {
+                font-size: 2.2rem;
+            }
+
+            .score-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 1.2rem;
+            }
+
+            .mode-chip {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            .control-btn {
+                padding: 8px 10px;
+                font-size: 0.75rem;
+            }
+
+            .control-btn .btn-icon {
+                font-size: 0.9rem;
+            }
+
+            header h1 {
+                font-size: 1rem;
+            }
+
+            .nav-tab {
+                padding: 6px 8px;
+                font-size: 0.7rem;
+            }
+
+            .top-three-section {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .top-player-card {
+                padding: 10px;
+            }
+
+            .top-player-value {
+                font-size: 1.2rem;
+            }
+
+            .leaderboard-list-section .list-header {
+                font-size: 0.7rem;
+                padding: 8px 10px;
+            }
+
+            .leaderboard-item {
+                padding: 8px 10px;
+            }
+
+            .player-avatar-small {
+                width: 26px;
+                height: 26px;
+                font-size: 0.8rem;
+            }
+
+            .leaderboard-name {
+                font-size: 0.8rem;
+            }
+
+            .leaderboard-value {
+                font-size: 0.85rem;
+            }
+
+            .history-card {
+                padding: 10px;
+            }
+
+            .history-header {
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+
+            .history-date {
+                font-size: 0.75rem;
+            }
+
+            .history-result {
+                font-size: 1rem;
+            }
+
+            .history-players {
+                font-size: 0.85rem;
+            }
+
+            .chart-canvas-container {
+                height: 150px;
+            }
+
+            .achievements-progress-card {
+                padding: 14px;
+                gap: 14px;
+            }
+
+            .progress-ring {
+                width: 80px;
+                height: 80px;
+            }
+
+            .progress-value {
+                font-size: 1rem;
+            }
+
+            .stat-num {
+                font-size: 1.2rem;
+            }
+
+            .achievement-category {
+                padding: 10px;
+            }
+
+            .category-header {
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+            }
+
+            .category-icon {
+                font-size: 1rem;
+            }
+
+            .category-title {
+                font-size: 0.85rem;
+            }
+
+            .settings-card {
+                padding: 10px;
+            }
+
+            .settings-card-header {
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+            }
+
+            .card-icon {
+                font-size: 1rem;
+            }
+
+            .card-title {
+                font-size: 0.85rem;
+            }
+
+            .setting-row {
+                padding: 8px 10px;
+            }
+
+            .setting-label {
+                font-size: 0.8rem;
+            }
+
+            .setting-desc {
+                font-size: 0.65rem;
+            }
+
+            .setting-input {
+                width: 50px;
+                padding: 4px 8px;
+                font-size: 0.85rem;
+            }
+
+            .data-btn {
+                padding: 10px 12px;
+            }
+
+            .data-btn .btn-icon {
+                font-size: 1.2rem;
+            }
+
+            .data-btn .btn-title {
+                font-size: 0.8rem;
+            }
+
+            .data-btn .btn-desc {
+                font-size: 0.65rem;
+            }
+
+            .about-content {
+                gap: 10px;
+            }
+
+            .about-logo {
+                font-size: 2rem;
+            }
+
+            .about-name {
+                font-size: 0.9rem;
+            }
+
+            .about-version {
+                font-size: 0.7rem;
+            }
+
+            .about-author {
+                font-size: 0.65rem;
+            }
+
+            .footer-content {
+                padding: 6px 10px;
+                gap: 4px;
+            }
+
+            .footer-logo {
+                font-size: 0.75rem;
+            }
+
+            .footer-text {
+                font-size: 0.65rem;
+            }
+
+            .footer-author {
+                font-size: 0.65rem;
+            }
+
+            .footer-divider {
+                font-size: 0.65rem;
+            }
+        }
+
+        /* 横屏模式优化 */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .scoreboard-wrapper {
+                padding: 12px;
+            }
+
+            .scoreboard-header {
+                margin-bottom: 10px;
+                padding: 8px 12px;
+            }
+
+            .scoreboard-main {
+                margin-bottom: 10px;
+            }
+
+            .team-header {
+                margin-bottom: 8px;
+            }
+
+            .team-avatar {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+                margin-bottom: 4px;
+            }
+
+            .team-name-input {
+                font-size: 0.9rem;
+            }
+
+            .games-won-dots {
+                margin-bottom: 4px;
+            }
+
+            .score-circle {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 8px;
+            }
+
+            .score-number {
+                font-size: 2.5rem;
+            }
+
+            .score-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.3rem;
+            }
+
+            .vs-section {
+                padding: 0 10px;
+            }
+
+            .vs-text {
+                font-size: 1rem;
+            }
+
+            .vs-line {
+                height: 40px;
+            }
+
+            .game-mode-section {
+                margin-bottom: 10px;
+            }
+
+            .mode-label {
+                margin-bottom: 6px;
+            }
+
+            .mode-chip {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .control-buttons {
+                gap: 6px;
+            }
+
+            .control-btn {
+                padding: 8px 12px;
+            }
+
+            .control-btn .btn-icon {
+                font-size: 0.9rem;
+            }
+
+            .control-btn .btn-text {
+                font-size: 0.75rem;
+            }
+
+            .nav-tabs {
+                margin-bottom: 12px;
+            }
+
+            .nav-tab {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+
+            header {
+                padding: 8px 0;
+            }
+
+            header h1 {
+                font-size: 1rem;
+            }
+
+            footer {
+                padding: 8px 12px;
+                margin-top: 12px;
+            }
+        }
+
+        /* 高分辨率屏幕优化 */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 900px;
+            }
+
+            .score-circle {
+                width: 180px;
+                height: 180px;
+            }
+
+            .score-number {
+                font-size: 4.5rem;
+            }
+
+            .team-avatar {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+
+            .stats-summary-card {
+                padding: 40px;
+            }
+
+            .stats-big-number {
+                font-size: 5rem;
+            }
+        }
+
+        /* 打印样式优化 */
+        @media print {
+            .nav-tabs,
+            footer,
+            .control-buttons,
+            .game-mode-section {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .screen {
+                display: block !important;
+                page-break-after: always;
+            }
+        }
+
             .theme-name {
                 font-size: 0.7rem;
             }
