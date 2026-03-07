@@ -1,5 +1,9 @@
 <div align="center">
 
+[![English](https://img.shields.io/badge/Language-English-blue?style=for-the-badge)](README.md) [![中文](https://img.shields.io/badge/Language-中文-red?style=for-the-badge)](README_CN.md)
+
+---
+
 # 🏸 Badminton Rapid Scoreboard
 
 ### 羽毛球极速计分板
