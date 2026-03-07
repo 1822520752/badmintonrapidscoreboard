@@ -1,0 +1,45 @@
+# 📸 Screenshots Folder
+
+This folder contains project screenshots for the README.
+
+## 📋 Required Screenshots
+
+Please add the following screenshots to this folder:
+
+### Main Scoreboard
+- `scoreboard-main.png` - Main scoreboard interface
+- `scoreboard-match.png` - Match in progress
+- `scoreboard-victory.png` - Victory animation
+
+### Smart Grouping
+- `grouping-input.png` - Player input interface
+- `grouping-result.png` - Grouping results
+- `grouping-start.png` - Start match from grouping
+
+### Statistics
+- `history-records.png` - Match history
+- `leaderboard.png` - Player leaderboard
+- `skill-analysis.png` - Skill analysis charts
+
+### Themes
+- `theme-purple.png` - Night Purple theme
+- `theme-orange.png` - Vibrant Orange theme
+- `theme-blue.png` - Sky Blue theme
+- `theme-green.png` - Forest Green theme
+- `theme-pink.png` - Sakura Pink theme
+- `theme-blackgold.png` - Black Gold theme
+
+## 📏 Screenshot Guidelines
+
+- **Size**: 390-428px width (mobile optimized)
+- **Format**: PNG preferred
+- **Size**: < 500KB each (compress if needed)
+- **Content**: Use sample data, no personal info
+
+## 🔗 How to Take Screenshots
+
+Visit: https://1822520752.github.io/badmintonrapidscoreboard/
+
+Use browser DevTools (F12) → Device Mode (Ctrl+Shift+M) → Take screenshot
+
+See `screenshots/README.md` for detailed instructions.

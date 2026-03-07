@@ -287,31 +287,33 @@ Charts, leaderboards, achievements
 
 ### 🏸 Main Scoreboard Interface
 
-| In Progress | Match Ended | Victory Animation |
+| Main Interface | Match In Progress | Victory Animation |
 |:---:|:---:|:---:|
-| ![In Progress](https://via.placeholder.com/300x500/6839E8/FFFFFF?text=In+Progress) | ![Match Ended](https://via.placeholder.com/300x500/27F05C/FFFFFF?text=Match+Ended) | ![Victory](https://via.placeholder.com/300x500/FFD700/000000?text=Victory) |
+| ![Main Interface](./screenshots/scoreboard-main.png) | ![Match In Progress](./screenshots/scoreboard-match.png) | ![Victory](./screenshots/scoreboard-victory.png) |
 
 ### 👥 Smart Grouping
 
 | Enter Players | Grouping Results | Start Match |
 |:---:|:---:|:---:|
-| ![Enter Players](https://via.placeholder.com/300x500/0133A4/FFFFFF?text=Enter+Players) | ![Grouping Results](https://via.placeholder.com/300x500/FF6B6B/FFFFFF?text=Grouping+Results) | ![Start Match](https://via.placeholder.com/300x500/4ECDC4/FFFFFF?text=Start+Match) |
+| ![Enter Players](./screenshots/grouping-input.png) | ![Grouping Results](./screenshots/grouping-result.png) | ![Start Match](./screenshots/grouping-start.png) |
 
 ### 📊 Statistics & Analytics
 
-| History | Leaderboard | Skill Analysis |
+| History Records | Leaderboard | Skill Analysis |
 |:---:|:---:|:---:|
-| ![History](https://via.placeholder.com/300x500/9B59B6/FFFFFF?text=History) | ![Leaderboard](https://via.placeholder.com/300x500/E74C3C/FFFFFF?text=Leaderboard) | ![Skill Analysis](https://via.placeholder.com/300x500/3498DB/FFFFFF?text=Skill+Analysis) |
+| ![History Records](./screenshots/history-records.png) | ![Leaderboard](./screenshots/leaderboard.png) | ![Skill Analysis](./screenshots/skill-analysis.png) |
 
 ### 🎨 Theme Gallery
 
 | Night Purple | Vibrant Orange | Sky Blue |
 |:---:|:---:|:---:|
-| ![Night Purple](https://via.placeholder.com/300x500/6839E8/FFFFFF?text=Night+Purple) | ![Vibrant Orange](https://via.placeholder.com/300x500/FF6B35/FFFFFF?text=Vibrant+Orange) | ![Sky Blue](https://via.placeholder.com/300x500/00D9FF/FFFFFF?text=Sky+Blue) |
+| ![Night Purple](./screenshots/theme-purple.png) | ![Vibrant Orange](./screenshots/theme-orange.png) | ![Sky Blue](./screenshots/theme-blue.png) |
 
 | Forest Green | Sakura Pink | Black Gold |
 |:---:|:---:|:---:|
-| ![Forest Green](https://via.placeholder.com/300x500/2ECC71/FFFFFF?text=Forest+Green) | ![Sakura Pink](https://via.placeholder.com/300x500/FFB6C1/FFFFFF?text=Sakura+Pink) | ![Black Gold](https://via.placeholder.com/300x500/1A1A2E/FFD700?text=Black+Gold) |
+| ![Forest Green](./screenshots/theme-green.png) | ![Sakura Pink](./screenshots/theme-pink.png) | ![Black Gold](./screenshots/theme-blackgold.png) |
+
+> 💡 **提示**: 如果图片未显示，请访问 [在线演示](https://1822520752.github.io/badmintonrapidscoreboard/) 查看实际效果
 
 </div>
 
