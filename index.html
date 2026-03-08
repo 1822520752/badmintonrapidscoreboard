@@ -55,6 +55,10 @@
             --blur-md: blur(16px);
             --blur-lg: blur(24px);
             --blur-xl: blur(40px);
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+            --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         [data-theme="orange"] {
@@ -270,6 +274,216 @@
             opacity: 0.5;
         }
 
+        /* 页面加载动画 */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 50%, var(--bg-gradient-3) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s var(--ease-out-expo), visibility 0.5s;
+        }
+
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-content {
+            text-align: center;
+        }
+
+        .loader-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .loader-icon::before {
+            content: '🏸';
+            font-size: 48px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: loaderBounce 1s var(--spring) infinite;
+        }
+
+        @keyframes loaderBounce {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.2); }
+        }
+
+        .loader-spinner {
+            width: 80px;
+            height: 80px;
+            border: 3px solid transparent;
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loader-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 16px;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* 粒子背景 */
+        .particles-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: particleFloat 20s infinite linear;
+        }
+
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 25s; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 20s; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 4s; animation-duration: 28s; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 6s; animation-duration: 22s; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 8s; animation-duration: 26s; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 10s; animation-duration: 21s; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 12s; animation-duration: 24s; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 14s; animation-duration: 23s; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 16s; animation-duration: 27s; }
+        .particle:nth-child(10) { left: 5%; animation-delay: 18s; animation-duration: 19s; }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateY(-100px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* 光效动画 */
+        .light-effect {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(60px);
+            animation: lightMove 15s infinite ease-in-out;
+        }
+
+        .light-effect:nth-child(1) {
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .light-effect:nth-child(2) {
+            bottom: -100px;
+            right: -100px;
+            background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+            animation-delay: 5s;
+            animation-direction: reverse;
+        }
+
+        @keyframes lightMove {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(100px, 50px) scale(1.2); }
+            50% { transform: translate(50px, 100px) scale(0.8); }
+            75% { transform: translate(-50px, 50px) scale(1.1); }
+        }
+
+        /* 渐入动画类 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+        }
+
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+        }
+
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s var(--ease-out-back), transform 0.5s var(--ease-out-back);
+        }
+
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* 交错动画延迟 */
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        .stagger-5 { transition-delay: 0.5s; }
+        .stagger-6 { transition-delay: 0.6s; }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -281,7 +495,7 @@
         header {
             text-align: center;
             margin-bottom: 30px;
-            animation: fadeInDown 0.6s ease;
+            animation: fadeInDown 0.6s var(--ease-out-expo);
         }
 
         @keyframes fadeInDown {
@@ -700,12 +914,14 @@
             justify-content: center;
             margin: 0 auto 16px;
             cursor: pointer;
-            transition: all var(--transition-normal);
+            transition: all 0.4s var(--ease-out-expo);
             border: 4px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 0 30px rgba(255, 255, 255, 0.05);
             backdrop-filter: var(--blur-sm);
             position: relative;
             overflow: hidden;
+            transform-style: preserve-3d;
+            will-change: transform, box-shadow;
         }
 
         .score-circle::before {
@@ -717,7 +933,19 @@
             height: 200%;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
             opacity: 0;
-            transition: opacity var(--transition-normal);
+            transition: opacity 0.4s var(--ease-out-expo);
+        }
+
+        .score-circle::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            transition: border-color 0.3s var(--ease-out-expo);
         }
 
         .score-circle:hover::before {
@@ -725,16 +953,63 @@
         }
 
         .score-circle:hover {
-            transform: scale(1.05);
+            transform: scale(1.08) translateY(-4px);
             background: rgba(255, 255, 255, 0.18);
             border-color: rgba(255, 255, 255, 0.35);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 0 40px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35), inset 0 0 40px rgba(255, 255, 255, 0.1), 0 0 60px rgba(104, 57, 232, 0.2);
+        }
+
+        .score-circle:hover::after {
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         .score-circle:active {
-            transform: scale(0.98);
+            transform: scale(1.02) translateY(-2px);
+            transition: transform 0.1s var(--ease-out-expo);
         }
 
+        /* 得分动画 */
+        .score-circle.scored {
+            animation: scorePulse 0.6s var(--ease-out-back);
+        }
+
+        @keyframes scorePulse {
+            0% { transform: scale(1); }
+            30% { transform: scale(1.15); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(39, 240, 92, 0.4); }
+            60% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* 胜利动画 */
+        .score-circle.winner {
+            animation: winnerPulse 0.8s var(--ease-out-back);
+            box-shadow: var(--shadow-accent), 0 0 60px rgba(39, 240, 92, 0.4), inset 0 0 50px rgba(39, 240, 92, 0.2);
+            border-color: var(--accent-color);
+            background: rgba(39, 240, 92, 0.2);
+        }
+
+        @keyframes winnerPulse {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.1); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.08); }
+            80% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+
+        /* 胜利光环效果 */
+        .score-circle.winner::before {
+            opacity: 1;
+            background: radial-gradient(circle, rgba(39, 240, 92, 0.3) 0%, transparent 70%);
+            animation: winnerGlow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes winnerGlow {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* 得分数字动画 */
         .score-number {
             font-size: 4rem;
             font-weight: 900;
@@ -743,6 +1018,21 @@
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
             position: relative;
             z-index: 1;
+            transition: transform 0.3s var(--ease-out-back);
+        }
+
+        .score-circle:active .score-number {
+            transform: scale(1.1);
+        }
+
+        .score-circle.scored .score-number {
+            animation: scoreNumberBounce 0.5s var(--ease-out-back);
+        }
+
+        @keyframes scoreNumberBounce {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
 
         .score-label {
@@ -1227,11 +1517,13 @@
             border: none;
             border-radius: var(--radius-md);
             cursor: pointer;
-            transition: all var(--transition-normal);
+            transition: all 0.3s var(--ease-out-expo);
             position: relative;
             overflow: hidden;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+            transform-style: preserve-3d;
+            will-change: transform, box-shadow;
         }
 
         .btn::before {
@@ -1241,15 +1533,41 @@
             left: 50%;
             width: 0;
             height: 0;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             transform: translate(-50%, -50%);
-            transition: width 0.5s ease, height 0.5s ease;
+            transition: width 0.6s var(--ease-out-expo), height 0.6s var(--ease-out-expo);
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn:active {
+            transform: translateY(0) scale(0.98);
         }
 
         .btn:active::before {
             width: 300px;
             height: 300px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        /* 按钮悬浮光效 */
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s var(--ease-out-expo);
+        }
+
+        .btn:hover::after {
+            left: 100%;
         }
 
         .btn-primary {
@@ -1260,8 +1578,8 @@
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 40px rgba(39, 240, 92, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(39, 240, 92, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
         .btn-danger {
@@ -1272,8 +1590,8 @@
         }
 
         .btn-danger:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 40px rgba(255, 77, 77, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(255, 77, 77, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
         .btn-dark {
@@ -1285,7 +1603,7 @@
         }
 
         .btn-dark:hover {
-            transform: translateY(-3px);
+            transform: translateY(-3px) scale(1.02);
             background: rgba(255, 255, 255, 0.2);
             border-color: rgba(255, 255, 255, 0.25);
         }
@@ -1298,7 +1616,7 @@
         }
 
         .btn-success:hover {
-            transform: translateY(-3px);
+            transform: translateY(-3px) scale(1.02);
             box-shadow: 0 10px 40px rgba(39, 240, 92, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
@@ -2558,6 +2876,37 @@
             border-color: var(--accent-color);
             background: linear-gradient(135deg, rgba(39, 240, 92, 0.1) 0%, rgba(39, 240, 92, 0.05) 100%);
             box-shadow: var(--shadow-accent);
+        }
+
+        /* 主题切换过渡效果 */
+        .theme-transition-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--primary-color);
+            opacity: 0;
+            z-index: 9998;
+            pointer-events: none;
+            transition: opacity 0.3s var(--ease-out-expo);
+        }
+
+        .theme-transition-overlay.fade-out {
+            opacity: 0;
+        }
+
+        .theme-transition-overlay:not(.fade-out) {
+            opacity: 0.1;
+        }
+
+        /* 主题切换时的全局过渡 */
+        .theme-transitioning,
+        .theme-transitioning * {
+            transition: background-color 0.3s var(--ease-out-expo), 
+                        border-color 0.3s var(--ease-out-expo), 
+                        color 0.3s var(--ease-out-expo),
+                        box-shadow 0.3s var(--ease-out-expo) !important;
         }
 
         .theme-preview {
@@ -6760,6 +7109,34 @@
     </style>
 </head>
 <body>
+    <!-- 页面加载动画 -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <div class="loader-spinner"></div>
+            </div>
+            <div class="loader-text">加载中...</div>
+        </div>
+    </div>
+
+    <!-- 粒子背景 -->
+    <div class="particles-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- 光效背景 -->
+    <div class="light-effect"></div>
+    <div class="light-effect"></div>
+
     <div class="container">
         <header>
             <h1>羽毛球极速记分板<span class="version-badge">专业版</span></h1>
@@ -7675,6 +8052,35 @@
     </div>
 
     <script>
+        // ==================== 页面加载动画 ====================
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('pageLoader');
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                initScrollAnimations();
+            }, 800);
+        });
+
+        // ==================== 滚动渐入动画 ====================
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .scale-in').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
         // ==================== 全局变量 ====================
         let timerInterval = null;
         let seconds = 0;
@@ -7768,27 +8174,49 @@
         function setTheme(theme) {
             const html = document.documentElement;
             
-            if (theme === 'purple') {
-                html.removeAttribute('data-theme');
-            } else {
-                html.setAttribute('data-theme', theme);
-            }
+            // 添加主题切换动画类
+            html.classList.add('theme-transitioning');
             
-            document.querySelectorAll('.theme-card').forEach(btn => {
-                btn.classList.remove('active');
-            });
+            // 创建过渡遮罩
+            const overlay = document.createElement('div');
+            overlay.className = 'theme-transition-overlay';
+            document.body.appendChild(overlay);
             
-            const activeBtn = document.querySelector(`.theme-card[data-theme="${theme}"]`);
-            if (activeBtn) {
-                activeBtn.classList.add('active');
-            }
+            // 触发重排以启动动画
+            void overlay.offsetWidth;
             
-            localStorage.setItem('theme', theme);
-            
-            if (currentScreen === 'history') {
-                destroyCharts();
-                setTimeout(() => initCharts(), 100);
-            }
+            // 添加淡出效果
+            setTimeout(() => {
+                overlay.classList.add('fade-out');
+                
+                if (theme === 'purple') {
+                    html.removeAttribute('data-theme');
+                } else {
+                    html.setAttribute('data-theme', theme);
+                }
+                
+                document.querySelectorAll('.theme-card').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                const activeBtn = document.querySelector(`.theme-card[data-theme="${theme}"]`);
+                if (activeBtn) {
+                    activeBtn.classList.add('active');
+                }
+                
+                localStorage.setItem('theme', theme);
+                
+                // 移除过渡效果
+                setTimeout(() => {
+                    overlay.remove();
+                    html.classList.remove('theme-transitioning');
+                }, 300);
+                
+                if (currentScreen === 'history') {
+                    destroyCharts();
+                    setTimeout(() => initCharts(), 100);
+                }
+            }, 150);
         }
 
         /**
@@ -7952,17 +8380,23 @@
             
             scoreHistory.push({ team, oldScore, newScore, timestamp: Date.now() });
             
+            const circleId = team === 'a' ? 'score-a-circle' : 'score-b-circle';
+            const scoreId = team === 'a' ? 'team-a-score' : 'team-b-score';
+            const circle = document.getElementById(circleId);
+            const scoreEl = document.getElementById(scoreId);
+            
             if (team === 'a') {
                 scoreA = newScore;
-                document.getElementById('team-a-score').textContent = scoreA;
-                document.getElementById('score-a-circle').classList.add('pulse');
-                setTimeout(() => document.getElementById('score-a-circle').classList.remove('pulse'), 300);
             } else {
                 scoreB = newScore;
-                document.getElementById('team-b-score').textContent = scoreB;
-                document.getElementById('score-b-circle').classList.add('pulse');
-                setTimeout(() => document.getElementById('score-b-circle').classList.remove('pulse'), 300);
             }
+            
+            // 更新分数显示
+            scoreEl.textContent = team === 'a' ? scoreA : scoreB;
+            
+            // 添加得分动画
+            circle.classList.add('scored');
+            setTimeout(() => circle.classList.remove('scored'), 600);
 
             playSound(amount > 0 ? 'score' : 'undo');
             vibrate(amount > 0 ? [50] : [30, 30, 30]);
