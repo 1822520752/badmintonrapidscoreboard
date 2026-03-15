@@ -10,6 +10,117 @@
         /* 引入外部库 */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap'); /* 引入更具科技感的字体 */
+        /* 移动端排版布局深度优化 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 12px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 6px;
+            }
+
+            .section-subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 20px;
+            }
+
+            /* 卡片内边距调整 */
+            .input-section, .mode-section, .expense-type-section, 
+            .amount-section, .split-mode-section, .participants-section,
+            .settings-card, .history-card, .leaderboard-card {
+                padding: 18px 15px;
+                border-radius: 16px;
+            }
+
+            /* 按钮宽度调整 */
+            .btn-large {
+                width: 100%;
+                justify-content: center;
+                padding: 14px;
+            }
+
+            /* 分组模式卡片优化 */
+            .mode-cards, .split-mode-cards {
+                gap: 10px;
+            }
+
+            .mode-card, .split-mode-card {
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                gap: 12px;
+            }
+
+            .mode-icon, .split-mode-icon {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+
+            .mode-name, .split-mode-name {
+                font-size: 0.95rem;
+                margin-bottom: 2px;
+            }
+
+            .mode-desc, .split-mode-desc {
+                font-size: 0.75rem;
+                display: block;
+            }
+
+            /* 快速添加按钮组优化 */
+            .quick-add-buttons {
+                gap: 8px;
+            }
+
+            .quick-add-btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            /* 排行榜/历史记录列表优化 */
+            .leaderboard-item, .history-item {
+                padding: 12px;
+            }
+
+            /* 数据管理按钮堆叠 */
+            .data-buttons {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .data-btn {
+                flex-direction: row;
+                text-align: left;
+                padding: 15px;
+            }
+
+            .data-btn .btn-icon {
+                margin-right: 15px;
+                margin-bottom: 0;
+            }
+        }
+
+        /* 极小屏幕适配 */
+        @media (max-width: 380px) {
+            .main-header h1 {
+                font-size: 1.1rem;
+            }
+            
+            .logo-icon {
+                font-size: 1.4rem;
+            }
+            
+            .version-tag {
+                font-size: 0.65rem;
+                padding: 2px 6px;
+            }
+            
+            .nav-tab {
+                width: 64px;
+            }
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
