@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,13 @@
     <title>羽毛球极速记分板 - 专业版</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <style>
+        /* 引入外部库 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap'); /* 引入更具科技感的字体 */
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <style>
         :root {
             --primary-color: #6839E8;
@@ -492,86 +499,144 @@
             z-index: 1;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            animation: fadeInDown 0.6s var(--ease-out-expo);
+        /* 高级头部样式 */
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            animation: slideDown 0.6s var(--ease-out-expo);
         }
 
-        @keyframes fadeInDown {
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 4px 10px rgba(104, 57, 232, 0.3));
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            line-height: 1.2;
+            text-align: left;
+            text-shadow: none;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .main-header h1::after {
+            display: none;
+        }
+
+        .subtitle {
+            font-family: 'Teko', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .version-tag {
+            background: rgba(39, 240, 92, 0.1);
+            color: #27F05C;
+            border: 1px solid rgba(39, 240, 92, 0.3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            font-family: 'Teko', sans-serif;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(39, 240, 92, 0.15);
+        }
+
+        @keyframes slideDown {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 900;
-            margin-bottom: 10px;
-            color: #000000;
-            text-shadow: 0 2px 20px rgba(104, 57, 232, 0.15);
-            letter-spacing: 1px;
-            position: relative;
-            display: inline-block;
-        }
-
-        h1::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background: #27F05C;
-            border-radius: 4px;
-            transform: skewX(-12deg);
-        }
-
-        .version-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--highlight-color), #ff6b9d);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        footer {
+        /* 页脚高级感增强 */
+        .footer-premium {
             text-align: center;
-            padding: 24px 20px;
-            margin-top: 20px;
+            margin-top: 40px;
+            padding: 30px 20px;
+            position: relative;
+            z-index: 1;
         }
 
-        .footer-content {
-            display: inline-flex;
+        .footer-logo-wrapper {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 15px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border-radius: 50%;
+            display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: rgba(104, 57, 232, 0.1);
-            border-radius: 20px;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        .footer-logo {
-            font-size: 1rem;
-        }
-
-        .footer-text {
-            font-size: 0.85rem;
+        .footer-brand {
+            font-family: 'Teko', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 5px;
             font-weight: 600;
-            color: #6839E8;
         }
 
-        .footer-divider {
-            color: #6839E8;
-            opacity: 0.4;
+        .footer-copyright {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            opacity: 0.7;
         }
 
-        .footer-author {
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: #0133A4;
+        /* 移动端适配 */
+        @media (max-width: 600px) {
+            .main-header {
+                padding: 12px 15px;
+                margin-bottom: 15px;
+            }
+            
+            .logo-icon {
+                font-size: 1.6rem;
+            }
+            
+            .main-header h1 {
+                font-size: 1.2rem;
+            }
+            
+            .subtitle {
+                font-size: 0.65rem;
+            }
+            
+            .version-tag {
+                padding: 2px 8px;
+                font-size: 0.7rem;
+            }
+
+            .footer-premium {
+                padding-bottom: 100px; /* 为移动端导航栏留出更多空间 */
+            }
         }
 
         .screen {
@@ -3710,10 +3775,12 @@
 
             /* 通知弹窗移动端优化 */
             .notification {
-                left: 8px;
-                right: 8px;
-                max-width: calc(100% - 16px);
-                padding: 12px 16px;
+                left: 50%;
+                right: auto;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                max-width: 320px;
+                padding: 20px 16px;
             }
 
             /* 头部移动端优化 */
@@ -7106,6 +7173,135 @@
                 margin-bottom: 5px;
             }
         }
+
+        /* 底部导航栏优化 */
+        .nav-icon {
+            display: none;
+            font-size: 1.2rem;
+            margin-bottom: 2px;
+        }
+        
+        .nav-text {
+            font-size: inherit;
+        }
+
+        /* 桌面/移动端显示控制 */
+        .mobile-only {
+            display: none !important;
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none !important;
+            }
+            .mobile-only {
+                display: flex !important;
+            }
+
+            body {
+                padding-bottom: 0; /* 移除body的padding-bottom，改用container控制 */
+            }
+
+            .nav-tabs {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-bottom: 0;
+                border-radius: 20px 20px 0 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 -5px 25px rgba(0,0,0,0.1);
+                z-index: 10000;
+                padding: 8px 0;
+                justify-content: flex-start; /* 允许滚动 */
+                gap: 0;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* 隐藏滚动条 */
+            .nav-tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .nav-tab {
+                flex: 0 0 auto; /* 不缩放，保持宽度 */
+                width: 72px; /* 固定宽度 */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 6px 0;
+                font-size: 0.7rem;
+                background: transparent !important;
+                box-shadow: none !important;
+                color: var(--text-muted);
+                border-radius: 12px;
+                margin: 0 2px;
+            }
+
+            .nav-tab:hover {
+                background: rgba(0, 0, 0, 0.03) !important;
+            }
+
+            .nav-tab.active {
+                color: var(--primary-color);
+                background: rgba(104, 57, 232, 0.08) !important;
+            }
+            
+            .nav-tab.active .nav-icon {
+                transform: scale(1.1);
+                transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
+
+            .nav-icon {
+                display: block;
+                font-size: 1.4rem;
+                margin-bottom: 4px;
+            }
+            
+            .nav-text {
+                font-size: 0.7rem;
+                font-weight: 600;
+            }
+            
+            /* 头部调整 */
+            header {
+                margin-bottom: 15px;
+                padding: 10px 0;
+            }
+            
+            header h1 {
+                font-size: 1.4rem;
+            }
+            
+            /* 隐藏原本的Footer */
+            footer {
+                display: none;
+            }
+            
+            /* 调整容器内边距 */
+            .container {
+                padding: 10px;
+                padding-bottom: 70px; /* 增加底部padding，确保内容不被导航栏遮挡，但又不过多留白 */
+            }
+        }
+        
+        /* 超小屏幕适配 */
+        @media (max-width: 360px) {
+            .nav-tab {
+                width: 60px;
+            }
+            
+            .nav-icon {
+                font-size: 1.2rem;
+            }
+            
+            .nav-text {
+                font-size: 0.65rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -7138,19 +7334,50 @@
     <div class="light-effect"></div>
 
     <div class="container">
-        <header>
-            <h1>羽毛球极速记分板<span class="version-badge">专业版</span></h1>
+        <header class="main-header">
+            <div class="logo-area">
+                <div class="logo-icon">🏸</div>
+                <div class="logo-text">
+                    <h1>羽毛球极速记分板</h1>
+                    <div class="subtitle">PROFESSIONAL SCOREBOARD</div>
+                </div>
+            </div>
+            <div class="version-tag">PRO 2.0</div>
         </header>
 
-        <ul class="nav-tabs">
-            <li class="nav-tab active" data-screen="scoreboard">记分板</li>
-            <li class="nav-tab" data-screen="grouping">智能分组</li>
-            <li class="nav-tab" data-screen="expense">费用计算</li>
-            <li class="nav-tab" data-screen="history">历史记录</li>
-            <li class="nav-tab" data-screen="leaderboard">排行榜</li>
-            <li class="nav-tab" data-screen="player-ability">能力分析</li>
-            <li class="nav-tab" data-screen="achievements">成就系统</li>
-            <li class="nav-tab" data-screen="settings">设置</li>
+        <ul class="nav-tabs desktop-only">
+            <li class="nav-tab active" data-screen="scoreboard">
+                <span class="nav-icon">🏸</span>
+                <span class="nav-text">记分板</span>
+            </li>
+            <li class="nav-tab" data-screen="grouping">
+                <span class="nav-icon">👥</span>
+                <span class="nav-text">分组</span>
+            </li>
+            <li class="nav-tab" data-screen="expense">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">费用</span>
+            </li>
+            <li class="nav-tab" data-screen="history">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">历史</span>
+            </li>
+            <li class="nav-tab" data-screen="leaderboard">
+                <span class="nav-icon">🏆</span>
+                <span class="nav-text">排行</span>
+            </li>
+            <li class="nav-tab" data-screen="player-ability">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text">能力</span>
+            </li>
+            <li class="nav-tab" data-screen="achievements">
+                <span class="nav-icon">🎖️</span>
+                <span class="nav-text">成就</span>
+            </li>
+            <li class="nav-tab" data-screen="settings">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">设置</span>
+            </li>
         </ul>
 
         <!-- Scoreboard Screen -->
@@ -8051,6 +8278,41 @@
         </div>
     </div>
 
+    <ul class="nav-tabs mobile-only">
+        <li class="nav-tab active" data-screen="scoreboard">
+            <span class="nav-icon">🏸</span>
+            <span class="nav-text">记分板</span>
+        </li>
+        <li class="nav-tab" data-screen="grouping">
+            <span class="nav-icon">👥</span>
+            <span class="nav-text">分组</span>
+        </li>
+        <li class="nav-tab" data-screen="expense">
+            <span class="nav-icon">💰</span>
+            <span class="nav-text">费用</span>
+        </li>
+        <li class="nav-tab" data-screen="history">
+            <span class="nav-icon">📊</span>
+            <span class="nav-text">历史</span>
+        </li>
+        <li class="nav-tab" data-screen="leaderboard">
+            <span class="nav-icon">🏆</span>
+            <span class="nav-text">排行</span>
+        </li>
+        <li class="nav-tab" data-screen="player-ability">
+            <span class="nav-icon">⚡</span>
+            <span class="nav-text">能力</span>
+        </li>
+        <li class="nav-tab" data-screen="achievements">
+            <span class="nav-icon">🎖️</span>
+            <span class="nav-text">成就</span>
+        </li>
+        <li class="nav-tab" data-screen="settings">
+            <span class="nav-icon">⚙️</span>
+            <span class="nav-text">设置</span>
+        </li>
+    </ul>
+
     <script>
         // ==================== 页面加载动画 ====================
         window.addEventListener('load', function() {
@@ -8124,7 +8386,7 @@
         // ==================== 初始化 ====================
         document.addEventListener('DOMContentLoaded', function() {
             initNavigation();
-            initServiceWorker();
+            // initServiceWorker(); // 暂未启用PWA
             loadSettings();
             loadMatchState();
             updateGamesWonDisplay();
@@ -8137,6 +8399,7 @@
             initPlayerAbilitySelector();
             initGrouping();
             initExpense();
+            initOnboarding();
         });
 
         /**
@@ -8237,6 +8500,53 @@
         }
 
         /**
+         * 切换屏幕
+         * @param {string} screenId - 目标屏幕ID
+         */
+        function switchScreen(screenId) {
+            if (screenId === currentScreen) return;
+            
+            const navTabs = document.querySelectorAll('.nav-tab');
+            navTabs.forEach(t => {
+                t.classList.remove('active');
+                if (t.getAttribute('data-screen') === screenId) {
+                    t.classList.add('active');
+                }
+            });
+            
+            const currentScreenEl = document.querySelector('.screen.active');
+            const nextScreenEl = document.getElementById(screenId);
+            
+            if (currentScreenEl) {
+                currentScreenEl.classList.add('fade-out');
+                setTimeout(() => {
+                    currentScreenEl.classList.remove('active', 'fade-out');
+                    if (nextScreenEl) nextScreenEl.classList.add('active');
+                    currentScreen = screenId;
+                    
+                    if (screenId === 'history') {
+                        setTimeout(() => initCharts(), 100);
+                    } else if (screenId === 'leaderboard') {
+                        setTimeout(() => renderLeaderboard(), 100);
+                    } else if (screenId === 'player-ability') {
+                        setTimeout(() => {
+                            initPlayerAbilitySelector();
+                            renderPlayerAbility();
+                        }, 100);
+                    } else if (screenId === 'achievements') {
+                        setTimeout(() => {
+                            renderAchievements();
+                            updateAchievementsSummary();
+                        }, 100);
+                    }
+                }, 200);
+            } else {
+                if (nextScreenEl) nextScreenEl.classList.add('active');
+                currentScreen = screenId;
+            }
+        }
+
+        /**
          * 初始化导航标签
          */
         function initNavigation() {
@@ -8244,43 +8554,23 @@
             navTabs.forEach(tab => {
                 tab.addEventListener('click', function() {
                     const screenId = this.getAttribute('data-screen');
-                    if (screenId === currentScreen) return;
-                    
-                    navTabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    const currentScreenEl = document.querySelector('.screen.active');
-                    const nextScreenEl = document.getElementById(screenId);
-                    
-                    if (currentScreenEl) {
-                        currentScreenEl.classList.add('fade-out');
-                        setTimeout(() => {
-                            currentScreenEl.classList.remove('active', 'fade-out');
-                            nextScreenEl.classList.add('active');
-                            currentScreen = screenId;
-                            
-                            if (screenId === 'history') {
-                                setTimeout(() => initCharts(), 100);
-                            } else if (screenId === 'leaderboard') {
-                                setTimeout(() => renderLeaderboard(), 100);
-                            } else if (screenId === 'player-ability') {
-                                setTimeout(() => {
-                                    initPlayerAbilitySelector();
-                                    renderPlayerAbility();
-                                }, 100);
-                            } else if (screenId === 'achievements') {
-                                setTimeout(() => {
-                                    renderAchievements();
-                                    updateAchievementsSummary();
-                                }, 100);
-                            }
-                        }, 200);
-                    } else {
-                        nextScreenEl.classList.add('active');
-                        currentScreen = screenId;
-                    }
+                    switchScreen(screenId);
                 });
             });
+        }
+
+        /**
+         * 安全解析JSON
+         * @param {string} str - JSON字符串
+         * @param {any} fallback - 默认值
+         */
+        function safeJSONParse(str, fallback) {
+            try {
+                return str ? JSON.parse(str) : fallback;
+            } catch (e) {
+                console.warn('JSON Parse Error:', e);
+                return fallback;
+            }
         }
 
         /**
@@ -8644,7 +8934,7 @@
                 highlights: getHighlightsSummary()
             };
             
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             matchHistory.unshift(matchResult);
             localStorage.setItem('matchHistory', JSON.stringify(matchHistory));
             
@@ -8717,7 +9007,7 @@
          * 加载历史记录
          */
         function loadHistory() {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             const historyList = document.getElementById('history-list');
             
             if (matchHistory.length === 0) {
@@ -8773,7 +9063,7 @@
          * @param {number} index - 比赛索引
          */
         function showMatchDetail(index) {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             const match = matchHistory[index];
             
             if (!match) return;
@@ -8856,7 +9146,7 @@
          * @param {number} index - 比赛记录索引
          */
         function shareHistoryMatch(index) {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             const match = matchHistory[index];
             
             if (!match) {
@@ -8913,7 +9203,7 @@
          * 导出历史记录
          */
         function exportHistory() {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             const dataStr = JSON.stringify(matchHistory, null, 2);
             const blob = new Blob([dataStr], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
@@ -9077,7 +9367,7 @@
          * 保存分组历史
          */
         function saveGroupingHistory(players, mode, groups) {
-            const history = JSON.parse(localStorage.getItem('groupingHistory') || '[]');
+            const history = safeJSONParse(localStorage.getItem('groupingHistory'), []);
             history.unshift({
                 date: new Date().toISOString(),
                 players: players,
@@ -9095,7 +9385,7 @@
          * 加载分组历史
          */
         function loadGroupingHistory() {
-            const history = JSON.parse(localStorage.getItem('groupingHistory') || '[]');
+            const history = safeJSONParse(localStorage.getItem('groupingHistory'), []);
             const container = document.getElementById('grouping-history-list');
             
             if (history.length === 0) {
@@ -9484,7 +9774,7 @@
          * 保存费用历史
          */
         function saveExpenseHistory(type, total, participants, splitMode, ratios) {
-            const history = JSON.parse(localStorage.getItem('expenseHistory') || '[]');
+            const history = safeJSONParse(localStorage.getItem('expenseHistory'), []);
             history.unshift({
                 date: new Date().toISOString(),
                 type: type,
@@ -9503,7 +9793,7 @@
          * 加载费用历史
          */
         function loadExpenseHistory() {
-            const history = JSON.parse(localStorage.getItem('expenseHistory') || '[]');
+            const history = safeJSONParse(localStorage.getItem('expenseHistory'), []);
             const container = document.getElementById('expense-history-list');
             
             if (history.length === 0) {
@@ -9527,7 +9817,7 @@
          * @param {number} index - 历史记录索引
          */
         function showExpenseDetail(index) {
-            const history = JSON.parse(localStorage.getItem('expenseHistory') || '[]');
+            const history = safeJSONParse(localStorage.getItem('expenseHistory'), []);
             const item = history[index];
             
             if (!item) {
@@ -9633,7 +9923,7 @@
          * 导出费用记录
          */
         function exportExpense() {
-            const expenseHistory = JSON.parse(localStorage.getItem('expenseHistory') || '[]');
+            const expenseHistory = safeJSONParse(localStorage.getItem('expenseHistory'), []);
             
             let text = '💰 费用分摊记录\n';
             text += '==================\n\n';
@@ -9677,7 +9967,7 @@
          * 加载设置
          */
         function loadSettings() {
-            const settings = JSON.parse(localStorage.getItem('settings') || '{}');
+            const settings = safeJSONParse(localStorage.getItem('settings'), {});
             if (settings.gameMode) {
                 setGameMode(settings.gameMode);
             }
@@ -9713,7 +10003,7 @@
          * 加载比赛状态
          */
         function loadMatchState() {
-            const state = JSON.parse(localStorage.getItem('matchState') || '{}');
+            const state = safeJSONParse(localStorage.getItem('matchState'), {});
             if (state.scoreA !== undefined) {
                 scoreA = state.scoreA;
                 scoreB = state.scoreB;
@@ -9752,9 +10042,9 @@
          */
         function backupData() {
             const data = {
-                matchHistory: JSON.parse(localStorage.getItem('matchHistory') || '[]'),
-                expenseHistory: JSON.parse(localStorage.getItem('expenseHistory') || '[]'),
-                settings: JSON.parse(localStorage.getItem('settings') || '{}'),
+                matchHistory: safeJSONParse(localStorage.getItem('matchHistory'), []),
+                expenseHistory: safeJSONParse(localStorage.getItem('expenseHistory'), []),
+                settings: safeJSONParse(localStorage.getItem('settings'), {}),
                 exportDate: new Date().toISOString()
             };
             
@@ -10352,12 +10642,12 @@
         function loadAchievements() {
             const saved = localStorage.getItem('unlockedAchievements');
             if (saved) {
-                unlockedAchievements = JSON.parse(saved);
+                unlockedAchievements = safeJSONParse(saved, []);
             }
             
             const stats = localStorage.getItem('achievementStats');
             if (stats) {
-                const parsed = JSON.parse(stats);
+                const parsed = safeJSONParse(stats, {});
                 totalMatches = parsed.totalMatches || 0;
                 totalWins = parsed.totalWins || 0;
                 currentStreak = parsed.currentStreak || 0;
@@ -10537,7 +10827,7 @@
          * 初始化所有图表
          */
         function initCharts() {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             if (matchHistory.length === 0) return;
 
             createMonthlyChart(matchHistory);
@@ -10830,7 +11120,7 @@
         function loadAvatars() {
             const saved = localStorage.getItem('playerAvatars');
             if (saved) {
-                playerAvatars = JSON.parse(saved);
+                playerAvatars = safeJSONParse(saved, {});
             }
         }
 
@@ -10926,7 +11216,7 @@
          * 初始化选手选择器
          */
         function initPlayerAbilitySelector() {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             const select = document.getElementById('ability-player-select');
             
             if (!select || matchHistory.length === 0) return;
@@ -10979,7 +11269,7 @@
             noDataHint.style.display = 'none';
             display.style.display = 'block';
 
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             
             let wins = 0;
             let losses = 0;
@@ -11222,7 +11512,7 @@
          * 渲染排行榜
          */
         function renderLeaderboard() {
-            const matchHistory = JSON.parse(localStorage.getItem('matchHistory') || '[]');
+            const matchHistory = safeJSONParse(localStorage.getItem('matchHistory'), []);
             const leaderboardList = document.getElementById('leaderboard-list');
             const topThreeSection = document.getElementById('top-three-section');
             
@@ -11565,10 +11855,7 @@
             lastTap = currentTime;
         });
 
-        // 页面加载完成后初始化
-        document.addEventListener('DOMContentLoaded', function() {
-            initOnboarding();
-        });
+
     </script>
 </body>
 </html>
